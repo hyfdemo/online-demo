@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/comm.css"/>
+    <link rel="stylesheet" href="css/contach.css"/>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZcAbmGWwaK7wMKGDuUC2EGKilsUUREGC"></script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="allmap"></div>
+    <div class="container">
+        <div class="cont-bg">
+            <div class="cont-txt">
+                <h4>我们的 <span> 愿景： </span>最受客户信任的互联网企业</h4>
+                <p>
+                    魔客吧将以诚实守信的操守、共同发展的理念，长远的眼光建立公司的品牌。从创造用户价值、社会价值开始，从而提升企业的自身价值，与公司相关利益 共同体取得和谐发展，以受到员工...
+                </p>
+            </div>
+            <div class="cont-button">
+                <a href="#">给我们留言</a>
+            </div>
+        </div>
+    </div>
+    <div class="contach-bg">
+        <div class="container">
+            <div class="cont-lx cont_bg1">
+                <div class="cont_nr">
+                    <div>公司地址</div>
+                    <p>四川省成都</p>
+                    <p>（……）</p>
+                    <p>邮编：6100000</p>
+                    <a href="#">Address</a>
+                </div>
+            </div>
+            <div class="cont-lx cont_bg2">
+                <div class="cont_nr">
+                    <div>联系方式</div>
+                    <p>联系电话 |028-88888888</p>
+                    <p>传真 |028-88888888</p>
+                    <p>Email | 666666@qq.com</p>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="cont-lx cont_bg3">
+                <div class="cont_nr">
+                    <div>公司信箱</div>
+                    <p>非工作时间请给我们留言</p>
+                    <p>我们将会尽快给予您回复或</p>
+                    <p>咨询建议</p>
+                    <a href="#">Mailbox</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="services1">
+            <h1><img src="img/inner_content_title.png"/>如何到达我们公司？<img src="img/inner_content_title.png"/></h1>
+        </div>
+        <div class="contach-luxian">
+            <img src="img/contact_arrive_dl01.gif" alt=""/>
+            <h3>公交车</h3>
+            <div class="contach-add">
+                <p>站台：<span>正在规划路线</span></p>
+                <p>线路：……</p>
+            </div>
+        </div>
+        <div class="contach-luxian">
+            <img src="img/contact_arrive_dl02.gif" alt=""/>
+            <h3>出租车/自驾</h3>
+            <div class="contach-add">
+                <p>站台：<span>正在规划路线</span></p>
+                <p>线路：……</p>
+            </div>
+        </div>
+        <div class="contach-luxian">
+            <img src="img/contact_arrive_dl03.gif" alt=""/>
+            <h3>地铁</h3>
+            <div class="contach-add">
+                <p>站台：<span>正在规划路线</span></p>
+                <p>线路：……</p>
+            </div>
+        </div>
+        <div class="contach-luxian">
+            <img src="img/contact_arrive_dl04.gif" alt=""/>
+            <h3>微信公众账号</h3>
+            <div class="contach-imgs">
+                <img src="img/weixin-258.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!-- 弹出框-->
+    <div class="alert"></div>
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/comm.js"></script>
+    <script>
+		$(function(){
+			$('#header').load('data/header.php',function(){
+				navText('联系我们');
+			});
+			$('#footer').load('data/footer.php',function(){
+				inputText();
+			});
+		})
+        //百度地图
+        var map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(104.072227,30.663456),8);
+        setTimeout(function(){
+            map.setZoom(14);
+        }, 2000);  //2秒后放大到14级
+        map.enableScrollWheelZoom(true);
+        var scaleControl = new BMap.ScaleControl({
+            anchor : BMAP_ANCHOR_TOP_RIGHT
+        });
+        var navControl = new BMap.NavigationControl({
+            anchor : BMAP_ANCHOR_TOP_LEFT
+        });
+        var maptype = new BMap.MapTypeControl();
+        map.addControl(scaleControl);
+        map.addControl(navControl);
+        map.addControl(maptype);
+
+        var grocoder = new BMap.Geocoder();
+        grocoder.getPoint("天府广场",function(point){
+            //TODO 标注
+            var marker = new BMap.Marker(point);
+            map.addOverlay(marker);
+            //TODO 重新设置地图的中心点和显示级别
+            map.centerAndZoom(point,15);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+div.bg{
+    width: 100%;
+    min-height: 350px;
+    background: url(img/service_banner.jpg) no-repeat center top;
+}
+.services{
+    width: 100%;
+}
+.services1{
+    text-align: center;
+    margin: 20px 0;
+}
+.services1 h1>img{
+    margin: 0 20px;
+}
+.services2{
+    font-size: 0;
+}
+.services2>div{
+    width: 23.5%;
+    min-height: 266px;
+    background: #F6F6F6;
+    display: inline-block;
+    /*position: relative;*/
+    text-align: center;
+    padding: 30px;
+}
+.services2 .zs{
+    margin-right: 2%;
+}
+.services2 .zs>div{
+    text-align: center;
+}
+.services2 div.txt{
+    margin-top: 15px;
+    text-align: left;
+}
+.services2 .txt>h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 0;
+}
+.txt>p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.services2 .txt p>span{
+    color: #999;
+    font-size: 15px;
+}
+.services2 .txt p{
+    color: #666;
+}
+.scope{
+    width: 100%;
+    background: #F6F6F6;
+}
+.scope-txt{
+    font-size: 0;
+}
+.scope-img{
+    width: 30%;
+    display: inline-block;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 30px;
+}
+.scope-r{
+    margin-right: 5%;
+}
+.scope-img>div{
+    width: 360px;
+    height: 271px;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 30px;
+    background: url(img/service_scope_bg.png) no-repeat;
+    position: relative;
+}
+.scope-img .txt>p{
+    position: absolute;
+    font-size: 16px;
+    top: 50px;
+    left: 2px;
+    padding: 10px;
+}
+.serve-scope{
+    width: 440px;
+    height: 32px;
+    background: #4bcdd9;
+    margin-left: 380px;
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 32px;
+    color: #fff;
+}
+.serve-scope1{
+    margin-top: 25px;
+}
+.table{
+    margin-top: 35px;
+}
+.table tbody tr>td{
+    text-align: center;
+}

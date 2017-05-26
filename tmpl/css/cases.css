@@ -1,0 +1,84 @@
+
+div.bg{
+    width: 100%;
+    min-height: 350px;
+    background: url(img/case_banner.jpg) no-repeat center top;
+}
+
+.services{
+    width: 100%;
+}
+.services1{
+    text-align: center;
+    margin: 20px 0;
+}
+.services1 h1>img{
+    margin: 0 20px;
+}
+.cases-button{
+    margin-top: 40px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+.cases-button li{
+    float: left;
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    margin-right: 10px;
+}
+.cases-button li:hover{
+    background: #4bcdd9;
+    border: 1px solid #4bcdd9;
+    color: #fff;
+}
+.cases-button li:hover a{
+    color: #fff;
+}
+.cases-box{
+    position: relative;
+}
+.cases-box .box{
+    width: 24%;
+    border: 2px solid #ccc;
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 8px;
+    /*text-align: justify;*/
+    /*overflow: hidden;*/
+    border-radius: 5px;
+}
+.cases-box .box img{
+    width: 100%;
+    padding: 5px;
+}
+.box .box-lm{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+    padding-left: 15px;
+}
+.box:hover{
+    border: 2px solid #4bcdd9;
+}
+.box .box-lm a{
+    width: 80px;
+    height: 30px;
+    display: block;
+    background: #4bcdd9;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+.box .box-lm a:hover{
+    background: #000;
+}
+.box .box-txt{
+    width: 100%;
+    background: #F6F6F6;
+    padding: 20px 10px;
+    font-size: 14px;
+}

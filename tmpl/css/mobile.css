@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: #333333;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    color: #444;
+}
+.fts{
+    font-size: 0;
+}
+div.bg{
+    width: 100%;
+    min-height: 350px;
+    background: url(img/mobile_banner.jpg) no-repeat center top;
+}
+div.container{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.services{
+    width: 100%;
+}
+.services1{
+    text-align: center;
+    margin: 20px 0;
+}
+.services1 h1>img{
+    margin: 0 20px;
+}
+.services1>h2{
+    margin: 20px 0;
+}
+.container .mobile{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+.container .mobile:last-child{
+    margin-right: 0;
+}
+.mobile .mobile-it{
+    float: left;
+    margin-top: 30px;
+}
+.mobile .mobile-it:first-child{
+    width: 20%;
+}
+.mobile .mobile-it:last-child{
+    float: right;
+    width: 75%;
+    margin-right: 5%;
+}
+.mobile .mobile-it>h3{
+    line-height: 35px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.mobile .mobile-it>p{
+    line-height: 25px;
+}
+.bg-cont{
+    width: 100%;
+    background: #F6F6F6;
+    margin-top: 50px;
+}
+.mobile-cti{
+    width: 50%;
+    min-height: 300px;
+    margin-top: 50px;
+    float: left;
+    overflow: hidden;
+}
+.mod-top{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.mod-cen{
+    text-align: center;
+}
+.img{
+    float: left;
+    height: 80px;
+    margin-right: 15px;
+}
+div.txt{
+    float: left;
+    height: 80px;
+}
+.mobile-txt{
+    font-size: 24px;
+}
+.mobile-txtbg{
+    font-size: 25px;
+    font-weight: bold;
+    color: #4BCDD9;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+.mob-txt{
+    margin-top: 20px;
+}
+.mob-txt>p{
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: left;
+    line-height: 30px;
+}
+.mob-txt ul>li{
+    border: 1px solid #dddddd;
+    width: 100px;
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    margin-right: 10px;
+}
+.mob-txt ul{
+    margin-top: 20px;
+}
+.mob-txt ul>li:hover{
+    background: #4bcdd9;
+    border: 1px solid #4bcdd9;
+}
+.mob-txt ul>li:hover a{
+    color: #fff;
+}
+.app-h1{
+    color: #4bcdd9;
+}
+.app-txt{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 35px;
+}
+.app-img span{
+    color: #4bcdd9;
+}
+.app-img img{
+    margin-right: 15px;
+}

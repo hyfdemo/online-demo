@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> new document </title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <link rel="stylesheet" href="2048.css"/>
+  <script src="zepto-touch-gesture-detect.js"></script>
+  <script src="animation.js"></script>
+  <script src="2048.js"></script>
+
+</head>
+
+<body>
+<p id="scoreId">Score:<span id="score"></span>
+  &nbsp;Top:<span id="top"></span>
+</p>
+
+<div id="gridPanel">
+
+</div>
+<div id="gameOver">
+  <div><!--背景div--></div>
+  <p><!--前景框-->
+    Game Over!<br>
+    Score:<span id="finalScore"></span><br>
+    <a class="button" onclick="game.start()">
+      Try again!
+    </a>
+  </p>
+</div>
+</body>
+</html>

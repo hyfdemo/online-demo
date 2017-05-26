@@ -1,0 +1,146 @@
+
+#allmap{
+    width: 100%;
+    min-height: 350px;
+    /*background: url(img/contact_banner.jpg) no-repeat center top;*/
+}
+.services{
+    width: 100%;
+    margin-top: 35px;
+}
+.services1{
+    text-align: center;
+    margin: 20px 0;
+}
+.services1 h1>img{
+    margin: 0 20px;
+}
+.cont-bg{
+    width: 100%;
+    height: 200px;
+    background: url(img/contact_int_bg.gif) no-repeat;
+    margin-top: 20px;
+    position: relative;
+}
+.cont-txt{
+    width: 70%;
+    position: absolute;
+    top: 30px;
+    left: 2%;
+    float: left;
+}
+.cont-txt h4{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.cont-txt p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.cont-button{
+    width: 28%;
+    position: absolute;
+    left: 950px;
+    top: 55px;
+}
+.cont-button a{
+    width: 134px;
+    height: 35px;
+    background: #000;
+    border-radius: 2px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+}
+.cont-button a:hover{
+    background: #4BCDD9;
+}
+.contach-bg{
+    background: #F6F6F6;
+    width: 100%;
+    min-height: 300px;
+}
+.cont-lx{
+    width: 30%;
+    float: left;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    position: relative;
+}
+.cont_bg1{
+    width: 320px;
+    min-height: 340px;
+    background: url(img/contact_type_ad_bg.gif) no-repeat;
+    margin-right: 120px;
+}
+.cont_bg2{
+    width: 320px;
+    min-height: 340px;
+    background: url(img/contact_type_tel_bg.gif) no-repeat;
+    margin-right: 120px;
+}
+.cont_bg3{
+    width: 320px;
+    min-height: 340px;
+    background: url(img/contact_type_mail_bg.gif) no-repeat;
+}
+.cont_nr{
+    text-align: center;
+    position: absolute;
+    top: 125px;
+    left: 55px;
+    width: 200px;
+}
+.cont_nr>div{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cont_nr>p{
+    line-height: 30px;
+    font-size: 14px;
+}
+.cont_nr>a{
+    width: 95px;
+    height: 35px;
+    display: block;
+    background: #000000;
+    border-radius: 2px;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+.cont_nr>a:hover{
+    background: #4bcdd9;
+}
+.contach-luxian{
+    width: 22.5%;
+    float: left;
+    margin-left: 2.5%;
+    text-align: center;
+    margin-top: 35px;
+}
+.contach-luxian>h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: #4bcdd9;
+    border-top: 1px solid #4bcdd9;
+    border-bottom: 1px solid #4bcdd9;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.contach-luxian .contach-add{
+    text-align: left;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.contach-luxian .contach-add p>span{
+    color: #FFB82A;
+}
+.contach-luxian .contach-imgs{
+    margin-top: 20px;
+}
