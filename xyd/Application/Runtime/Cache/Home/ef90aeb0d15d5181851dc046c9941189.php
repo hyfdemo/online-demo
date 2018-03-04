@@ -1,0 +1,110 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>返校心愿单</title>
+    <style>
+        body,section{
+            margin: 0;
+            padding: 0;
+        }
+        html,body,section{
+            width: 100%;
+            height: 100%;
+            color: #666;
+        }
+        section img{
+            width: 100%;
+        }
+        textarea{
+            border: 0;
+            outline: 0;
+            text-align: center;
+            font-size: 16px;
+        }
+        #wish{
+                top: 522px;
+    left: 47px;
+    display: inline-block;
+    width: 112px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0 0 25px 25px;
+    position: absolute;
+    background: transparent;
+    resize: none;
+        }
+        #image{
+                top: 266px;
+    left: 206px;
+    display: inline-block;
+    width: 146px;
+    height: 146px;
+    position: absolute;
+        }
+        #qr{
+            top: 467px;
+    left: 238px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+<section>
+    <img src="http://www.51bszx.com/cx/Public/src/img/show.jpg" alt="">
+    <img id='image' src="<?php echo ($data["img"]); ?>" alt="">
+    <img id='qr' src="http://www.51bszx.com/cx/Public/src/img/logo.jpg" alt="">
+    <textarea  id="wish"><?php echo ($data["content"]); ?></textarea>
+</section>
+<script src="http://www.51bszx.com/cx/Public/src/js/jquery-3.3.1.min.js"></script>
+
+<script>
+function recalc(){
+                var owidth='375',
+                    oheight='667',
+                    swidth=$(window).width(),
+                    sheight=$(window).height();
+                
+                $('#wish').css({
+                    'top':parseInt(swidth*522/owidth),
+                    'left':parseInt(swidth*47/owidth),
+                    'width':parseInt(swidth*112/owidth),
+                    'height':parseInt(swidth*60/owidth),
+                    'lineHeight':parseInt(swidth*60/owidth)+'px'
+                })
+                $('#image').css({
+                    'top':parseInt(swidth*266/owidth),
+                    'left':parseInt(swidth*206/owidth),
+                    'width':parseInt(swidth*146/owidth),
+                    'height':parseInt(swidth*146/owidth)
+                })
+                $('#qr').css({
+                    'top':parseInt(swidth*467/owidth),
+                    'left':parseInt(swidth*238/owidth),
+                    'width':parseInt(swidth*100/owidth),
+                    'height':parseInt(swidth*100/owidth)
+                })
+                
+            }
+    (function() {
+       recalc();
+                $(window).resize(function () {
+                    recalc();
+                })
+                // setTimeout(function(){
+                //     location.href='https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI1MDc1NDI5Mg==#wechat_redirect'
+                // },10000)
+    })()
+</script>
+</body>
+</html>

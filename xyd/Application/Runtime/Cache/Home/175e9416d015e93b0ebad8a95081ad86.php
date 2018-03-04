@@ -1,0 +1,219 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>返校心愿单</title>
+    <style>
+        body,section,div,p{
+            margin: 0;
+            padding: 0;
+        }
+        html,body,section{
+            width: 100%;
+            height: 100%;
+            color: #666;
+        }
+        section img{
+            width: 100%;
+        }
+        section{
+            /*background: url('http://www.51bszx.com/cx/Public/src/img/show.jpg') no-repeat;*/
+            /*background-size: cover;*/
+        }
+        textarea{
+            border: 0;
+            outline: 0;
+            text-align: center;
+            font-size: 16px;
+        }
+        #wish{
+                top: 522px;
+    left: 47px;
+    display: inline-block;
+    width: 112px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0 0 25px 25px;
+    position: absolute;
+    background: transparent;
+    resize: none;
+        }
+        #image{
+                top: 266px;
+    left: 206px;
+    display: inline-block;
+    width: 146px;
+    height: 146px;
+    position: absolute;
+        }
+        #qr{
+            top: 467px;
+    left: 238px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+        }
+        #fade{
+            position: absolute;
+            top: 0;
+            right: 4%;
+            width: 100px;
+            display: none;
+            /*left: 50%;
+            transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+    color: #fff;*/
+        }
+    </style>
+
+</head>
+<body>
+<!-- <div id='fade'>
+    <p>保存图片并分享朋友圈</p>
+    <p>增加中奖率喔！</p>
+</div> -->
+<img id='fade' src="http://www.51bszx.com/cx/Public/src/img/f.png" alt="">
+<section>
+    <!-- <img src="http://www.51bszx.com/cx/Public/src/img/show.jpg" alt=""> -->
+    <!-- <img id='image' src="<?php echo ($data["img"]); ?>" alt=""> -->
+    <!-- <img id='qr' src="http://www.51bszx.com/cx/Public/src/img/logo.jpg" alt=""> -->
+    <!-- <textarea  id="wish"><?php echo ($data["content"]); ?></textarea> -->
+<canvas id="myCanvas"></canvas>
+</section>
+<script src="http://www.51bszx.com/cx/Public/src/js/jquery-3.3.1.min.js"></script>
+
+<script>
+       
+function recalc(){
+                var owidth='375',
+                    oheight='667',
+                    swidth=$(window).width(),
+                    sheight=$(window).height();
+                $('#myCanvas').css({
+                    'width':swidth,
+                    'height':sheight
+                })
+                $('#wish').css({
+                    'top':parseInt(swidth*522/owidth),
+                    'left':parseInt(swidth*47/owidth),
+                    'width':parseInt(swidth*112/owidth),
+                    'height':parseInt(swidth*60/owidth),
+                    'lineHeight':parseInt(swidth*60/owidth)+'px'
+                })
+                $('#image').css({
+                    'top':parseInt(swidth*266/owidth),
+                    'left':parseInt(swidth*206/owidth),
+                    'width':parseInt(swidth*146/owidth),
+                    'height':parseInt(swidth*146/owidth)
+                })
+                $('#qr').css({
+                    'top':parseInt(swidth*467/owidth),
+                    'left':parseInt(swidth*238/owidth),
+                    'width':parseInt(swidth*100/owidth),
+                    'height':parseInt(swidth*100/owidth)
+                })
+                
+            }
+    (function() {
+
+        var owidth='375',
+                    oheight='667',
+                    swidth=$(window).width(),
+                    sheight=$(window).height();
+                // $('#myCanvas').css({
+                //     'width':swidth,
+                //     'height':sheight
+                // })
+       // recalc();
+       //          $(window).resize(function () {
+       //              recalc();
+       //          })
+
+                
+                 var area = document.getElementById('myCanvas')
+// area.width = swidth
+        // area.height = sheight
+         var cxt = area.getContext('2d')
+        // cxt.scale(2, 2)
+        // var  devicePixelRatio = window.devicePixelRatio || 1,   
+  backingStoreRatio = cxt.webkitBackingStorePixelRatio || cxt.mozBackingStorePixelRatio || cxt.msBackingStorePixelRatio || cxt.oBackingStorePixelRatio || cxt.backingStorePixelRatio || 1, 
+  ratio = devicePixelRatio / backingStoreRatio;
+area.width = swidth * ratio; 
+area.height = sheight * ratio; 
+area.style.width = swidth + 'px'; 
+area.style.height = sheight + 'px'; 
+cxt.scale(ratio, ratio);
+
+        // cxt.fillRect(0, 0, area.width, area.height)
+        
+        const image0 = new Image()
+                 image0.crossOrigin='Anonymous';
+      image0.src='http://www.51bszx.com/cx/Public/src/img/show.jpg';
+      image0.onload = () => {
+        cxt.drawImage(image0, 0,0, swidth,  sheight)
+
+        const image2 = new Image()
+                 image2.crossOrigin='Anonymous';
+
+      image2.src='http://www.51bszx.com/cx/Public/src/img/logo.jpg'
+      image2.onload = () => {
+        cxt.drawImage(image2, parseInt(swidth*238/owidth),parseInt(sheight*460/oheight), parseInt(swidth*100/owidth), parseInt(sheight*100/oheight))
+
+    }
+        $.ajax({
+            type:'get',
+            url:'http://www.51bszx.com/cx/index/show_s',
+            success:function(data){
+                cxt.font='16px Arial';
+        cxt.fillStyle = '#000';
+        cxt.fillText(data.content,parseInt(swidth*70/owidth),parseInt(sheight*544/oheight));
+                const image1 = new Image()
+                 image1.crossOrigin='Anonymous';
+
+      image1.src=data.img;
+      image1.onload = () => {
+        cxt.drawImage(image1, parseInt(swidth*206/owidth),parseInt(sheight*260/oheight), parseInt(swidth*146/owidth),parseInt(sheight*146/oheight))
+
+    }
+
+        
+            }
+        })
+        
+
+
+    // console.log(area.toDataURL("image/png"));
+    // var data=area.toDataURL("image/png");
+    // // console.log(image)
+    //  $('section').html('<img src='+data+ '>')
+    }
+    // $('button').click(function(){
+    //     var image = new Image();
+    //             image.crossOrigin='Anonymous';
+
+    // image.src=area.toDataURL("image/png");
+    // console.log(image)
+    //  $('section').html(image)
+    // })
+    setTimeout(function(){
+        var image = new Image();
+    image.src = area.toDataURL("image/png");
+     $('section').html(image)
+     $('#fade').show();
+    },5000)
+
+                setTimeout(function(){
+                    location.href='https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI1MDc1NDI5Mg==#wechat_redirect'
+                },10000)
+    })()
+</script>
+</body>
+</html>

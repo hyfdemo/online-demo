@@ -1,0 +1,9 @@
+[ 2017-02-19T07:09:17+08:00 ] 101.226.33.225 /xibei/Admin/pullmsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+ERR: 非法操作:pullmsg
+

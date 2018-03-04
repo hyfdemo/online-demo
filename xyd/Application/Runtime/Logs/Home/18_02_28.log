@@ -1,0 +1,289 @@
+[ 2018-02-28T00:38:03+08:00 ] 182.149.156.20 /cx/index/index_s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2018-02-28T00:38:04+08:00 ] 182.149.156.20 /cx/index/code?code=001EfQUZ1Ru3g11BtrUZ1410VZ1EfQUf&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 37 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2018-02-28T00:38:04+08:00 ] 182.149.156.20 /cx/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-02-28T00:38:20+08:00 ] 182.149.156.20 /cx/index/name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 45 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 46 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `cx_name` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cx_name` WHERE ( openid='o9JLCwcTgEf4mUnXo3wLUnoheOJM' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 57 行.
+
+[ 2018-02-28T00:38:23+08:00 ] 182.149.156.20 /cx/index/name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 45 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 46 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `cx_name` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cx_name` WHERE ( openid='o9JLCwcTgEf4mUnXo3wLUnoheOJM' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: data /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 57 行.
+
+[ 2018-02-28T00:39:28+08:00 ] 182.149.156.20 /cx/index/img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /data/wwwroot/zrhwh2/wwwroot/cx/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-02-28T00:40:08+08:00 ] 182.149.156.20 /cx/index/img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+
+[ 2018-02-28T00:40:25+08:00 ] 182.149.156.20 /cx/index/img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /data/wwwroot/zrhwh2/wwwroot/cx/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-02-28T00:40:33+08:00 ] 182.149.156.20 /cx/index/name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 45 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 46 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `cx_name` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `cx_name` WHERE ( openid='o9JLCwcTgEf4mUnXo3wLUnoheOJM' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: data /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 57 行.
+
+[ 2018-02-28T00:40:44+08:00 ] 182.149.156.20 /cx/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2018-02-28T08:33:02+08:00 ] 182.140.177.145 /cx/index/index_s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2018-02-28T08:33:04+08:00 ] 182.140.177.145 /cx/index/code?code=0612GA4r1dMiJn08Pr4r1k3B4r12GA4t&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 37 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2018-02-28T08:33:06+08:00 ] 182.140.177.145 /cx/index/code?code=081MLNZz1t8UAe0abpZz1YQPZz1MLNZZ&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 37 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2018-02-28T08:33:07+08:00 ] 182.140.177.145 /cx/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2018-02-28T08:34:14+08:00 ] 182.140.177.145 /cx/index/index_s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2018-02-28T08:34:15+08:00 ] 182.140.177.145 /cx/index/code?code=0014AhCF0UdJhj2RKsDF00EoCF04AhC7&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 37 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2018-02-28T08:34:16+08:00 ] 182.140.177.145 /cx/index/code?code=001E4FBx0kHwFi155fAx0XoGBx0E4FBg&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 37 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2018-02-28T08:34:16+08:00 ] 182.140.177.145 /cx/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2018-02-28T08:34:41+08:00 ] 171.214.139.91 /cx/index/img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /data/wwwroot/zrhwh2/wwwroot/cx/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-02-28T08:34:44+08:00 ] 182.140.177.145 /cx/index/name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 45 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 46 行.
+NOTIC: [8] Use of undefined constant openid - assumed 'openid' /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `cx_name` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cx_name` WHERE ( openid='o9JLCwT1L2lMtqB0CuXZhCjp9wYA' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: data /data/wwwroot/zrhwh2/wwwroot/cx/Application/Home/Controller/IndexController.class.php 第 57 行.
+

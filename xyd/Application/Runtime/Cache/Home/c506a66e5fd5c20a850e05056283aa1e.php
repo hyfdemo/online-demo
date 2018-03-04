@@ -1,0 +1,168 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>心愿单后台</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            color: #666;
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            padding:10px;
+        }
+        li{
+            border-top:1px solid #ccc;
+        }
+        li:last-child{
+            border-bottom: 1px solid #ccc;
+        }
+        .title a{
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: #666;
+            flex: 1;
+            display: inline-block;
+        }
+        a img{
+            width:60px;
+            height: 50px;
+        }
+        div{
+            float: right;
+        }
+        div a{
+            margin:0 10px;
+        }
+        header a{
+            padding:4px 6px;
+            border:1px solid #ccc;
+            margin: 10px;
+        }
+        #modal{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background:rgba(0,0,0,.3);
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        #modal div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 999;
+            background:#fff;
+        }
+        #modal span{
+            position: absolute;
+            top: -16px;
+            right: -10px;
+            color: #fff;
+            z-index: 999;
+            cursor: pointer;
+            background: #555;
+    border-radius: 50%;
+    padding: 4px 8px;
+        }
+        h4{
+                background: #eee;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+        padding-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+    <h4>管理后台</h4>
+        <a href="javascript:reward();">抽奖</a>
+    </header>
+    <h4>心愿数据</h4>
+    <ul>
+        <li class="title">
+            <a href="javascript:;">礼物</a>
+            <a href="javascript:;">心愿单</a>
+            <a href="javascript:;">姓名</a>
+            <a href="javascript:;">微信名</a>
+            <a href="javascript:;">联系电话</a>
+            <a href="javascript:;">地址</a>
+        </li>
+        <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li>
+        <?php if($v[img] != null): ?><a href="javascript:;"><img src="<?php echo ($v["img"]); ?>" alt=""></a>
+            <?php else: ?>
+            <a href="javascript:;"><img src="http://www.51bszx.com/cx/Public/src/img/thumb.png" alt=""></a><?php endif; ?>
+            <a href="javascript:;"><?php echo ($v["content"]); ?></a>
+            <a href="javascript:;"><?php echo ($v["name"]); ?></a>
+            <a href="javascript:;"><?php echo ($v["nickname"]); ?></a>
+            <a href="javascript:;"><?php echo ($v["coll"]); ?></a>
+            <a href="javascript:;"><?php echo ($v["address"]); ?></a>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?>
+    </ul>
+<?php echo ($page); ?>
+    <div id='modal'>
+        <div>
+    <span>X</span>
+
+<ul>
+    <li>
+        抽奖中...
+    </li>
+
+</ul>
+        </div>
+    </div>
+<script src="http://www.51bszx.com/cx/Public/src/js/jquery-3.3.1.min.js"></script>
+
+        <script>
+
+        function reward(){
+            $('#modal').show();
+                $.ajax({
+                    url:'http://www.51bszx.com/cx/admin/Lucky_draw',
+                    type:'get',
+                    success:function(data){
+                        var html=' <li><a href="javascript:;">心愿单</a><a href="javascript:;">姓名</a><a href="javascript:;">联系电话</a><a href="javascript:;">地址</a></li>';
+                        $.each(data,function(i,v){
+                            html+= `<li><a href="javascript:;">${v.content}</a>
+            <a href="javascript:;">${v.name}</a>
+            <a href="javascript:;">${v.coll}</a>
+            <a href="javascript:;">${v.address}</a></li>`;
+                        });
+                        setTimeout(function(){
+                        $('#modal ul').html(html);
+                        },3000)
+                    }
+                })
+            }
+            (function(){
+                    $('#modal span').click(function(){
+                        $('#modal').hide();
+                    })
+
+            })()
+        </script>
+</body>
+</html>

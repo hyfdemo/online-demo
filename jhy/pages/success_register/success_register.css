@@ -1,0 +1,29 @@
+.header{
+	width: 100%;
+	height: 15rem;
+	text-align: center;
+}
+.header img{
+	width: 5.13rem;
+	height: 5.13rem;
+	margin:4.25rem 0 1.69rem;
+}
+.header p{
+	color: #fff;
+	font-size: 14px;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section p{
+	font-size: 12px;
+	margin:2.31rem 0 0.63rem;
+}
+section a{
+	text-decoration: underline;
+	color: #515151;
+	font-size: 12px;
+	margin-top: 2.5rem;
+}

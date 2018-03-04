@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心实名认证中</title>
+    <link rel="stylesheet" href="../../src/css/common.css">
+    <link rel="stylesheet" href="name_authing.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back'></i>实名认证</header>
+   <div class='authing tbcolor'>
+   <img class="loading" src="../../src/img/loading.jpg" alt="">
+    <p>审核中，请耐心等候</p>
+   </div>
+    <div class="authinfo">
+         <label for="name">真实姓名</label>
+        <input id='name' type="text" value="张三">
+    </div>
+       <div class="authinfo">
+         <label for="idcard">身份证号</label>
+        <input id="idcard" type="text" value="13012341234">
+    </div>
+    <section>
+    <button class="tcolor hide radiusbutton" onclick="goHome();">返回首页</button>
+    </section>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../../src/js/require.js"></script>
+<script src='../../src/js/config.js'></script>
+<script src='name_authing.js'></script>
+</body>
+</html>

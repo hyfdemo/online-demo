@@ -1,0 +1,20 @@
+.deskcontainer{
+	display: flex;
+	flex-wrap: wrap;
+}
+.deskcontainer a{
+	width: 10.31rem;
+    height: 10.31rem;
+    margin-left: 0.94rem;
+    margin-top: 0.94rem;
+    border-radius: 0.63rem;
+    box-shadow: 0rem 0rem 0.38rem 0rem rgba(170, 170, 170, 1);
+}
+.deskcontainer a img{
+	width: 4.2rem;
+	height: 4.2rem;
+}
+.deskcontainer a span{
+	font-size: 14px;
+	color: rgba(16, 16, 16, 1);
+}
