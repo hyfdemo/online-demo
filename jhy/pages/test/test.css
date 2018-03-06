@@ -1,0 +1,38 @@
+section{
+	text-align: center;
+}
+h3{
+	font-size: 18px;
+	margin-top: 2.19rem;
+}
+h3.tcolor{
+	margin-top: 0.69rem;
+}
+button.tcolor{
+	width: 5.94rem;
+	height: 1.88rem;
+	border:1px solid rgba(239, 82, 63, 1);
+	border-radius: 2.06rem;
+	color: rgba(239, 82, 63, 1);
+	background: #fff;
+	margin-top: 1.5rem;
+}
+div{
+	background: rgba(247, 247, 247, 1);
+	margin-top: 1.88rem;
+	height: 8.75rem;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.attention{
+	margin-top: 0.63rem;
+	height: 4.38rem;
+}
+p{
+	font-size: 14px;
+}
+.content{
+	text-align: initial;
+	padding: 0 0.94rem;
+}

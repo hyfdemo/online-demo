@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="name_auth.css">
 </head>
 <body>
-   <header class="tbcolor"><i id='back'></i>实名认证</header>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>实名认证</header>
    <h3>
    <img src="../../src/img/实名认证_尚未认证.png" alt="">
      尚未认证
@@ -44,7 +44,7 @@
     </div>
     </form>
 <p class='tips'>信息仅用于身份验证，救护员中心保障您的信息安全</p>
-<button class="tbcolor">提交</button>
+<button class="tbcolor bottombutton">提交</button>
 <script>
     var require={urlArgs:'v='+(new Date()).getTime()}
 </script>

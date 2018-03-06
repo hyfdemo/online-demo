@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心我的培训</title>
+    <link rel="stylesheet" href="../../src/css/common.css">
+    <link rel="stylesheet" href="../../src/css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>我的培训</header>
+   <div class="swiper-container">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+            <div id='starttrain' class="swiper-slide">
+                <div class="traincontainer">
+                    <p class="tcolor">2018.02.28 14:00</p>
+                    <div class="traincontent">
+                        <img src="../../src/img/我的培训_未参加.png" alt="">
+                        <div>
+                            <h3>培训名称</h3>
+                            <p>讲师：张某某</p>
+                            <span>培训简介培训简介培训简介培训简…</span>
+                        </div>
+                    </div>
+                    <div class="trainaddr">
+                        <img src="../../src/img/地点_红.png" alt="">
+                        <span>成都市成华区建设南路137号</span>
+                    </div>
+                </div>
+                <div class="traincontainer">
+                    <p class="tcolor">2018.03.18 09:00</p>
+                    <div class="traincontent">
+                        <img src="../../src/img/我的培训_未参加.png" alt="">
+                        <div>
+                            <h3>培训名称</h3>
+                            <p>讲师：张某某</p>
+                            <span>培训简介培训简介培训简介培训简…</span>
+                        </div>
+                    </div>
+                    <div class="trainaddr">
+                        <img src="../../src/img/地点_红.png" alt="">
+                        <span>成都市锦江区红星路137号</span>
+                    </div>
+                </div>
+            </div>
+            <div id='endtrain' class="swiper-slide">
+                <div class="traincontainer">
+                    <p>
+                    2018.03.18 09:00
+                    <span>合格</span>
+                    </p>
+                    <div class="traincontent">
+                        <img src="../../src/img/我的培训_已参加.png" alt="">
+                        <div>
+                            <h3>培训名称</h3>
+                            <p>讲师：张某某</p>
+                            <span>培训简介培训简介培训简介培训简…</span>
+                        </div>
+                    </div>
+                    <div class="trainaddr">
+                        <img src="../../src/img/地点_灰.png" alt="">
+                        <span>成都市锦江区红星路137号</span>
+                    </div>
+                </div>
+                <div class="traincontainer">
+                    <p>
+                    2018.03.18 09:00
+                    <span class="tcolor">不合格</span>
+                    </p>
+                    <div class="traincontent">
+                        <img src="../../src/img/我的培训_已参加.png" alt="">
+                        <div>
+                            <h3>培训名称</h3>
+                            <p>讲师：张某某</p>
+                            <span>培训简介培训简介培训简介培训简…</span>
+                        </div>
+                    </div>
+                    <div class="trainaddr">
+                        <img src="../../src/img/地点_灰.png" alt="">
+                        <span>成都市锦江区红星路137号</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../../src/js/require.js"></script>
+<script src='../../src/js/config.js'></script>
+<script src='train.js'></script>
+</body>
+</html>

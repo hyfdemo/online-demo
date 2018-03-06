@@ -8,13 +8,14 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="full-screen" content="yes">
     <meta name="x5-fullscreen" content="true">
-    <title>救护员中心登录注册</title>
+    <title>救护员中心修改密码</title>
     <link rel="stylesheet" href="../../src/css/common.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../../src/css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="changepwd.css">
 </head>
 <body>
-   <header class="tbcolor"><i id='back' onclick='goBack();'></i>救护员中心</header>
-   <h3>注册</h3>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>修改密码</header>
+    <h3>修改密码</h3>
     <form action="">
     <div>
         <input type="text" placeholder="手机号">
@@ -24,18 +25,19 @@
         <a class='tcolor' href="javascript:;">获取验证码</a>
 </div>
 <div>
-        <input type="password" placeholder="密码">
+        <input type="password" placeholder="新密码">
 </div>
 <div>
         <input type="password" placeholder="确认密码">
 </div>
-        <button class="tbcolor">注册</button>
+        <button class="tbcolor">确认修改</button>
     </form>
-    <div class="login">
-        <a href="../login/login.html">登录</a>
-    </div>
 
-<script src="../../src/js/require.js" defer async="true" data-main='../../src/js/config'></script>
-<script src='register.js'></script>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../../src/js/require.js"></script>
+<script src='../../src/js/config.js'></script>
+<script src='changepwd.js'></script>
 </body>
 </html>

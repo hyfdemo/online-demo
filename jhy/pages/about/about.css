@@ -1,0 +1,24 @@
+section{
+	text-align: center;
+	font-size: 14px;
+}
+section>div:first-child{
+	margin:2.81rem 0;
+}
+section>div:first-child img{
+	width: 5.63rem;
+	height: 5.63rem;
+}
+section>img{
+	width: 7rem;
+	height: 7rem;
+	margin-bottom: 8rem;
+}
+section>div:last-child{
+	display: flex;
+	justify-content: center;
+}
+section>div:last-child img{
+	width: 2.56rem;
+	height: 2.56rem;
+}

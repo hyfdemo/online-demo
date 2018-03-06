@@ -54,6 +54,13 @@ footer a em{
 	background: rgba(229, 28, 35, 1);
 	border-radius: 50%;
 }
+.bottombutton{
+	width: 100%;
+	height: 2.81rem;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+}
 .verticalimgspan{
 	display: flex;
 	flex-direction: column;

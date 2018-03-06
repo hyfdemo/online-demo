@@ -1,0 +1,27 @@
+.res{
+	height: 7.5rem;
+	margin-top: 0.63rem;
+	background: rgba(250, 250, 250, 1);
+	padding-right: 1.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+}
+.res div:first-child{
+	display: flex;
+	align-items: center;
+}
+.res div:first-child img{
+	width: 5.63rem;
+	height: 5.63rem;
+	border-radius: 50%;
+	margin:0 0.94rem;
+}
+.res div:last-child{
+	text-align: center;
+}
+.res div:last-child img{
+	width: 4.5rem;
+	height: 4.5rem;
+}

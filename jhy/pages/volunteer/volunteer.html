@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心志愿活动</title>
+    <link rel="stylesheet" href="../../src/css/common.css">
+    <link rel="stylesheet" href="../../src/css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="volunteer.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>志愿活动</header>
+   <div class="swiper-container">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+            <div id='starttrain' class="swiper-slide">
+                <div class="volunteercontainer">
+                    <p>
+                    2018.02.28 14:00
+                    <span>已报名：10人</span>
+                    </p>
+                    <div class="volunteercontent">
+                        <img src="../../src/img/志愿活动_志愿活动.png" alt="">
+                        <div>
+                            <h3>志愿活动名称</h3>
+                            <p>活动简介活动简介活动简介活动简…</p>
+                            <span>需要人数：30人</span>
+                        </div>
+                    </div>
+                    <div class="volunteeraddr">
+                    <div>
+                        <img src="../../src/img/地点_红.png" alt="">
+                        <span>活动地点</span>
+                    </div>
+                        <button class="tcolor">我要报名</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div id='endtrain' class="swiper-slide">
+                <div class="volunteercontainer">
+                    <p>2018.02.28 14:00</p>
+                    <div class="volunteercontent">
+                        <img src="../../src/img/志愿活动_已参加.png" alt="">
+                        <div>
+                            <h3>志愿活动名称</h3>
+                            <p>活动简介活动简介活动简介活动简…</p>
+                            <span>参加人数：30人</span>
+                        </div>
+                    </div>
+                    <div class="volunteeraddr">
+                    <div>
+                        <img src="../../src/img/地点_灰.png" alt="">
+                        <span>活动地点</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../../src/js/require.js"></script>
+<script src='../../src/js/config.js'></script>
+<script src='volunteer.js'></script>
+</body>
+</html>
