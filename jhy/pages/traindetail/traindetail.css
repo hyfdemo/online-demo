@@ -1,0 +1,46 @@
+.traintitle{
+	height: 8.44rem;
+	display: flex;
+	align-items: center;
+	padding: 0.94rem 0.94rem 0.25rem;
+	border-bottom: 0.94rem solid rgba(245, 245, 245, 1);
+}
+.traintitle img{
+	width: 7.31rem;
+	height: 6.63rem;
+}
+.traintitle div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: -webkit-fill-available;
+}
+.traintitle h4{
+	font-size: 16px;
+	font-weight: bold;
+}
+.traintitle p{
+	font-size: 12px;
+}
+.traindetail{
+	padding: 0 0.94rem;
+	text-align: center;
+}
+.traindetail p{
+	height: 2.75rem;
+	line-height: 2.75rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+.traindetail span{
+	display: block;
+	text-align: initial;
+	margin: 0.31rem 0 1.56rem;
+	font-size: 14px;
+}
+.traindetail button{
+	width: 8.75rem;
+	height: 2.5rem;
+	border:1px solid rgba(239, 82, 63, 1);
+	border-radius: 6.75rem;
+	background: #fff;
+}

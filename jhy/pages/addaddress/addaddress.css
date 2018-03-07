@@ -1,16 +1,19 @@
 form{
 	margin-top: 0.69rem;
 }
-div{
+form div{
 	height: 2.75rem;
 	line-height: 2.75rem;
 	padding-left: 0.94rem;
 	background: rgba(250, 250, 250, 1)
 }
-div label{
+form div label{
 	font-size: 14px;
 	display: inline-block;
 	width: 4.5rem;
+}
+form div input[type='text']{
+	background: rgba(250,250,250,1);
 }
 .select{
 	width: 1rem;

@@ -2,7 +2,8 @@ require.config({
 	baseUrl:'../../src/js',
 	paths:{
 		'jquery':'jquery-3.3.1.min',
-		'swiper':'swiper-4.1.6.min'
+		'swiper':'swiper-4.1.6.min',
+		'larea':"LArea.min"
 	},
 	shim:{
 		'swiper':{
