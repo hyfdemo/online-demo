@@ -4,7 +4,8 @@ require.config({
 		'jquery':'jquery-3.3.1.min',
 		'swiper':'swiper-4.1.6.min',
 		'larea':"LArea.min",
-		'wx':'http://res.wx.qq.com/open/js/jweixin-1.2.0.js'
+		'wx':'http://res.wx.qq.com/open/js/jweixin-1.2.0.js',
+		'template':'template-web'
 	},
 	shim:{
 		'swiper':{

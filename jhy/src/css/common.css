@@ -1,4 +1,11 @@
-a,article,aside,b,body,button,dd,div,dl,dt,footer,h1,h2,h3,h4,h5,header,i,input,li,nav,p,section,select,span,textarea,ul{padding:0;margin:0;list-style:none;font-style:normal;text-decoration:none;border:none;color:#313131;box-sizing:border-box;font-weight:lighter;font-family:Microsoft YaHei;-webkit-tap-highlight-color:transparent}a:focus,article:focus,aside:focus,b:focus,body:focus,button:focus,dd:focus,div:focus,dl:focus,dt:focus,footer:focus,h1:focus,h2:focus,h3:focus,h4:focus,h5:focus,header:focus,i:focus,input:focus,li:focus,nav:focus,p:focus,section:focus,select:focus,span:focus,textarea:focus,ul:focus{outline:none}body,html{height:100%;width:100%}html{font-size: 16px;}.hide{display:none}.show{display:block}.tcolor{color:rgba(239, 82, 63, 1) !important;}.tbcolor{background-color: rgba(239, 82, 63, 1) !important;}header{
+a,article,aside,b,body,button,dd,div,dl,dt,footer,h1,h2,h3,h4,h5,header,i,input,li,nav,p,section,select,span,textarea,ul{padding:0;margin:0;list-style:none;font-style:normal;text-decoration:none;border:none;color:#313131;box-sizing:border-box;font-weight:lighter;font-family:Microsoft YaHei;-webkit-tap-highlight-color:transparent}a:focus,article:focus,aside:focus,b:focus,body:focus,button:focus,dd:focus,div:focus,dl:focus,dt:focus,footer:focus,h1:focus,h2:focus,h3:focus,h4:focus,h5:focus,header:focus,i:focus,input:focus,li:focus,nav:focus,p:focus,section:focus,select:focus,span:focus,textarea:focus,ul:focus{outline:none}body,html{height:100%;width:100%}
+html{font-size: 16px;}
+@media screen and (max-width:320px) {
+	html{
+		font-size: 14px;
+	}
+}
+.hide{display:none}.show{display:block}.tcolor{color:rgba(239, 82, 63, 1) !important;}.tbcolor{background-color: rgba(239, 82, 63, 1) !important;}header{
 	height: 2.81rem;line-height:2.81rem;color: #fff;text-align: center;font-size: 18px;
 }header i{
 	position: absolute;
@@ -13,8 +20,9 @@ footer{
 	height: 2.81rem;
 	width: 100%;
 	display: flex;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
+	background: #fff;
 	border-top: 1px solid #d9d9d9;
 }
 footer a{
