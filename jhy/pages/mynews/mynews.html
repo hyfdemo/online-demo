@@ -15,20 +15,16 @@
 <body>
    <header class="tbcolor"><i id='back' onclick='goBack();'></i>我的消息</header>
    <section>
-    <div>
-      <p>
-       【考试提醒】消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容。
-      </p>
-      <p>2018-02-07 20:11:50</p>
-   </div>
-   <div>
-      <p>
-       【考试提醒】消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容。
-      </p>
-      <p>2018-02-07 20:11:50</p>
-   </div>
+    
    </section>
-       
+       <script id='tpl-news' type='text/html'>
+        {{each news}}
+          <div>
+      <p>{{$value.desi}}</p>
+      <p>{{$value.time}}</p>
+   </div>
+   {{/each}}
+       </script>
 <script>
     var require={urlArgs:'v='+(new Date()).getTime()}
 </script>

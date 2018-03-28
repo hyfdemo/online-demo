@@ -1,13 +1,17 @@
 .deskcontainer{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 .deskcontainer a{
-	width: 10.31rem;
-    height: 10.31rem;
-    margin-left: 0.94rem;
+	width: 44%;
+	padding:2rem 0;
+    margin-left: 4%;
     margin-top: 0.94rem;
     border-radius: 0.63rem;
+    -webkit-box-shadow: 0rem 0rem 0.38rem 0rem rgba(170, 170, 170, 1);
     box-shadow: 0rem 0rem 0.38rem 0rem rgba(170, 170, 170, 1);
 }
 .deskcontainer a img{

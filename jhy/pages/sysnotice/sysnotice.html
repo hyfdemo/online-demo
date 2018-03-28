@@ -15,20 +15,15 @@
 <body>
    <header class="tbcolor"><i id='back' onclick='goBack();'></i>系统通知</header>
    <section>
-    <div>
-      <p>
-       系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息
-      </p>
-      <p>2018-02-07 20:11:50</p>
-   </div>
-   <div>
-      <p>
-       系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息系统通知信息
-      </p>
-      <p>2018-02-07 20:11:50</p>
-   </div>
    </section>
-       
+       <script id='tpl-notices' type='text/html'>
+        {{each notices}}
+          <div>
+      <p>{{$value.desi}}</p>
+      <p>{{$value.time}}</p>
+   </div>
+   {{/each}}
+       </script>
 <script>
     var require={urlArgs:'v='+(new Date()).getTime()}
 </script>

@@ -22,10 +22,10 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="../../src/img/banner1.jpg" alt="">
+                <img src="../../src/img/首页_banner1.png" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="../../src/img/banner2.jpg" alt="">
+                <img src="../../src/img/首页_banner2.png" alt="">
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -73,8 +73,7 @@
             <img src="../../src/img/列表_选择.png" alt="">
         </div>
         <div class="lesson">
-            <p onclick='location.href="../recenttrain/recenttrain.html"'>【初级急救员急救知识培训】开班时间：2018年2月28日 09:00地点：成都市成华区建设路173号二楼3号教室开班人数：30人</p>
-        <p onclick='location.href="../recenttrain/recenttrain.html"'>【行车安全急救培训】开班时间：2018年2月10日 09:00地点：成都市成华区建设路173号三楼1号教室开班人数：30人</p>
+            
         </div>
     </div>
 
@@ -90,7 +89,9 @@
 <script src="../../src/js/require.js"></script>
 <script src='../../src/js/config.js'></script>
 <script id='tpl-lesson' type='text/html'>
-        <p onclick='location.href="../recenttrain/recenttrain.html"'>{{lesson}}</p>
+        {{each lesson}}        
+        <p onclick='location.href="../recenttrain/recenttrain.html"'>{{$value}}</p>
+        {{/each}}
 </script>
 <script src='index.js'></script>
 

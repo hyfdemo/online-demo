@@ -16,20 +16,17 @@
 <body>
    <header class="tbcolor"><i id='back' onclick='goBack();'></i>最近开班信息</header>
    <section>
-    <div>
-       <p>【初级急救员急救知识培训】</p>
-       <p>开班时间：2018年2月28日 09:00</p>
-       <p>地点：成都市成华区建设路173号二楼3号教室</p>
-       <p>开班人数：30人</p>
-   </div>
-   <div>
-       <p>【行车安全急救培训】</p>
-       <p>开班时间：2018年2月10日 09:00</p>
-       <p>地点：成都市成华区建设路173号三楼1号教室</p>
-       <p>开班人数：30人</p>
-   </div>
    </section>
-       
+       <script id='tpl-recentlesson' type='text/html'>
+       {{each lessons}}
+          <div>
+       <p>{{$value.title}}</p>
+       <p>开班时间：{{$value.time}}</p>
+       <p>地点：{{$value.addr}}</p>
+       <p>开班人数：{{$value.num}}人</p>
+   </div>
+   {{/each}}
+       </script>
 <script>
     var require={urlArgs:'v='+(new Date()).getTime()}
 </script>

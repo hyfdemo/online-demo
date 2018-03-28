@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../../src/css/common.css">
     <link rel="stylesheet" href="../../src/css/swiper-4.1.6.min.css">
     <link rel="stylesheet" href="study.css">
+    
+
 </head>
 <body>
    <header class="tbcolor"><i id='back' onclick='goBack();'></i>在线学习</header>
@@ -20,51 +22,82 @@
 
         <div class="swiper-wrapper">
             <div id='chooselesson' class="swiper-slide">
-                <div class="lessoncontent" onclick='location.href="../studylesson/studylesson.html"'>
-                    <img src="../../src/img/在线学习.png" alt="">
-                    <div>
-                        <p>课程名称</p>
-                        <span>课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课…</span>
-                    </div>
-                </div>
-                <div class="lessoncontent" onclick='location.href="../studylesson/studylesson.html"'>
-                    <img src="../../src/img/在线学习.png" alt="">
-                    <div>
-                        <p>课程名称</p>
-                        <span>课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课…</span>
-                    </div>
-                </div>
-                <div class="lessoncontent" onclick='location.href="../studylesson/studylesson.html"'>
-                    <img src="../../src/img/在线学习.png" alt="">
-                    <div>
-                        <p>课程名称</p>
-                        <span>课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课…</span>
-                    </div>
-                </div>
+                
 
             </div>
             <div id='finishlesson' class="swiper-slide">
-                <p>已完成总学时：<span class="tcolor">12</span>学时</p>
-                <div class="lessoncontent">
-                    <img src="../../src/img/在线学习.png" alt="">
-                    <div>
-                        <p>课程名称</p>
-                        <span>课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课…</span>
-                    </div>
-                </div>
+                
             </div>
             <div id="tofinishlesson" class="swiper-slide">
-                <div class="lessoncontent">
-                    <img src="../../src/img/在线学习.png" alt="">
-                    <div>
-                        <p>课程名称</p>
-                        <span>课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课…</span>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
+<script src="../../src/js/jquery-3.3.1.min.js"></script>
+    <script src="../../src/js/swiper-4.1.6.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+    pagination: {
+    el: '.swiper-pagination',
+    clickable :true,
+    slideToClickedSlide: true,
+    type : 'custom',
+    renderCustom: function (swiper, current, total) {
+        switch(current){
+            case 1:
+          return '<li class="active tcolor">选课中心</li><li>已完成课程</li><li>未完成课程</li>';
+          case 2:
+          return '<li>选课中心</li><li class="active tcolor">已完成课程</li><li>未完成课程</li>';
+          case 3:
+          return '<li>选课中心</li><li>已完成课程</li><li class="active tcolor">未完成课程</li>';
+          default:
+          return '<li class="active tcolor">选课中心</li><li>已完成课程</li><li>未完成课程</li>';
+            }
+        },
+  }
+});
+    $(mySwiper.pagination.$el[0]).on('click','li',function(){
+            $(this).addClass('active').siblings('.active').removeClass('active');
+            mySwiper.slideTo($(this).index(), 300, false);
+        })
+</script>
+<script id='tpl-chooselesson' type='text/html'>
+    {{each chooselesson}}
+    <div class="lessoncontent" onclick='location.href="../studylesson/studylesson.html"'>
+                    <img src="../../src/img/在线学习.png" alt="">
+                    <div>
+                        <p>{{$value.title}}</p>
+                        <span>{{$value.disc}}</span>
+                    </div>
+                </div>
+                
+                {{/each}}
+                </script>
+<script id='tpl-finishlesson' type='text/html'>
 
+                <p>已完成总学时：<span class="tcolor">{{finishlesson.num}}</span>学时</p>
+                {{each finishlesson.finishlessons}}
+                <div class="lessoncontent">
+                    <img src="../../src/img/在线学习.png" alt="">
+                    <div>
+                        <p>{{$value.title}}</p>
+                        <span>{{$value.disc}}</span>
+                    </div>
+                </div>
+                {{/each}}
+                </script>
+                <script id='tpl-tofinishlesson' type='text/html'>
+    {{each tofinishlesson}}
+    <div class="lessoncontent">
+                    <img src="../../src/img/在线学习.png" alt="">
+                    <div>
+                        <p>{{$value.title}}</p>
+                        <span>{{$value.disc}}</span>
+                    </div>
+                </div>
+                
+                {{/each}}
+                </script>
 <script>
     var require={urlArgs:'v='+(new Date()).getTime()}
 </script>
