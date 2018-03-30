@@ -1,0 +1,1 @@
+"use strict";require(["template"],function(t){var e={starttrain:[{time:"2018.02.28 14:00",enter:"10",title:"志愿活动名称",desi:"活动简介活动简介活动简介活动简…",need:"30",addr:"成都市成华区建设南路137号"}],endtrain:[{time:"2018.02.28 14:00",title:"志愿活动名称",desi:"活动简介活动简介活动简介活动简…",need:"30",addr:"成都市成华区建设南路137号"}]},r=t("tpl-starttrain",e),i=t("tpl-endtrain",e);$("#starttrain").html(r),$("#endtrain").html(i)});

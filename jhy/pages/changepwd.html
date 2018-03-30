@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心修改密码</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="../css/changepwd.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>修改密码</header>
+    <h3>修改密码</h3>
+    <form action="">
+    <div>
+        <input type="text" placeholder="手机号">
+    </div>
+<div>
+        <input type="text" placeholder="验证码">
+        <a class='tcolor' href="javascript:;">获取验证码</a>
+</div>
+<div>
+        <input type="password" placeholder="新密码">
+</div>
+<div>
+        <input type="password" placeholder="确认密码">
+</div>
+        <button class="tbcolor">确认修改</button>
+    </form>
+
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script src='../js/changepwd.js'></script>
+</body>
+</html>

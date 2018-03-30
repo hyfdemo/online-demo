@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心新建邮寄信息</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/LArea.min.css">
+    <link rel="stylesheet" href="../css/addaddress.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>新建邮寄信息</header>
+    <form action="">
+    
+    </form>
+<button class="tbcolor bottombutton">保存</button>
+<script id='tpl-form' type="text/html">
+<div>
+         <label for="name">联系人</label>
+        <input id='name' type="text" placeholder="请填写联系人姓名" value={{form.name}}>
+    </div>
+    <div>
+         <label for="phone">手机号</label>
+        <input id="phone" type="text" placeholder="请填写联系人手机号" value={{form.phone}}>
+    </div>
+    <div id='area'>
+         <label for="pcd">所在地区</label>
+        <input id="pcd" readonly="" type="text" name="input_area" placeholder="请选择省市区"  value={{form.addr}}>
+        <input id="pcdvalue" type="hidden" />
+        <img class='select' src="../src/img/列表_选择.png" alt="">
+    </div>
+    <div>
+         <label for="street">详细地址</label>
+        <input id="street" type="text" placeholder="请填写详细地址" value={{form.street}}>
+    </div>
+    <div class="setdefault">
+    {{if form.used==1}}
+        <input id="default" type="radio" hidden checked='true'>
+        <img class="toselected" src="../src/img/个人中心_邮寄信息_设为默认_选中.png" alt="">
+        {{else}}
+        <input id="default" type="radio" hidden>
+        <img class="toselected" src="../src/img/个人中心_邮寄信息_设为默认_未选.png" alt="">
+        {{/if}}
+         <label for="">设为默认</label>
+    </div>
+    </script>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script src="../js/LAreaData2.js"></script>
+<script src='../js/addaddress.js'></script>
+</body>
+</html>

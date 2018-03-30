@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心我的消息</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mynews.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>我的消息</header>
+   <section>
+    
+   </section>
+       <script id='tpl-news' type='text/html'>
+        {{each news}}
+          <div>
+      <p>{{$value.desi}}</p>
+      <p>{{$value.time}}</p>
+   </div>
+   {{/each}}
+       </script>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script src='../js/mynews.js'></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name="screen-orientation" content="portrait"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="full-screen" content="yes"><meta name="x5-fullscreen" content="true"><title>救护员中心我的培训</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/swiper-4.1.6.min.css"><link rel="stylesheet" href="../css/train.css"></head><body><header class="tbcolor"><i id="back" onclick="goBack();"></i>我的培训</header><div class="swiper-container"><div class="swiper-pagination"></div><div class="swiper-wrapper"><div id="starttrain" class="swiper-slide"></div><div id="endtrain" class="swiper-slide"></div></div></div><script src="../js/jquery-3.3.1.min.js"></script><script src="../js/swiper-4.1.6.min.js"></script><script>var mySwiper = new Swiper('.swiper-container',{
+    pagination: {
+    el: '.swiper-pagination',
+    clickable :true,
+    slideToClickedSlide: true,
+    type : 'custom',
+    renderCustom: function (swiper, current, total) {
+        switch(current){
+            case 1:
+          return '<li class="active tcolor">未开班</li><li>已结束</li>';
+          case 2:
+          return '<li>未开班</li><li class="active tcolor">已结束</li>';
+          default:
+          return '<li class="active tcolor">未开班</li><li>已结束</li>';
+            }
+        },
+  }
+});
+    $(mySwiper.pagination.$el[0]).on('click','li',function(){
+            $(this).addClass('active').siblings('.active').removeClass('active');
+            mySwiper.slideTo($(this).index(), 300, false);
+        })</script><script id="tpl-starttrain" type="text/html">{{each starttrain}}
+        <div class="traincontainer">
+                    <p class="tcolor">{{$value.time}}</p>
+                    <div class="traincontent" onclick='location.href="traindetail.html"'>
+                        <img src="../src/img/我的培训_未参加.png" alt="">
+                        <div>
+                            <h3>{{$value.title}}</h3>
+                            <p>讲师：{{$value.teacher}}</p>
+                            <span>{{$value.disc}}</span>
+                        </div>
+                    </div>
+                    <div class="trainaddr">
+                        <img src="../src/img/地点_红.png" alt="">
+                        <span>{{$value.addr}}</span>
+                    </div>
+                </div>
+                
+                {{/each}}</script><script id="tpl-endtrain" type="text/html">{{each endtrain}}
+                <div class="traincontainer">
+                    <p>
+                    {{$value.time}}
+                    <span>{{$value.check}}</span>
+                    </p>
+                    <div class="traincontent">
+                        <img src="../src/img/我的培训_已参加.png" alt="">
+                        <div>
+                            <h3>{{$value.title}}</h3>
+                            <p>讲师：{{$value.teacher}}</p>
+                            <span>{{$value.disc}}</span>
+                        </div>
+                    </div>
+                    <div class="trainaddr">
+                        <img src="../src/img/地点_灰.png" alt="">
+                        <span>{{$value.addr}}</span>
+                    </div>
+                </div>
+                
+                {{/each}}</script><script>var require={urlArgs:'v='+(new Date()).getTime()}</script><script src="../js/require.js"></script><script src="../js/config.js"></script><script src="../js/train.js"></script></body></html>

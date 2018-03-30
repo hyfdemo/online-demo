@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name="screen-orientation" content="portrait"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="full-screen" content="yes"><meta name="x5-fullscreen" content="true"><title>救护员中心最近开班信息</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/swiper-4.1.6.min.css"><link rel="stylesheet" href="../css/recenttrain.css"></head><body><header class="tbcolor"><i id="back" onclick="goBack();"></i>最近开班信息</header><section></section><script id="tpl-recentlesson" type="text/html">{{each lessons}}
+          <div>
+       <p>{{$value.title}}</p>
+       <p>开班时间：{{$value.time}}</p>
+       <p>地点：{{$value.addr}}</p>
+       <p>开班人数：{{$value.num}}人</p>
+   </div>
+   {{/each}}</script><script>var require={urlArgs:'v='+(new Date()).getTime()}</script><script src="../js/require.js"></script><script src="../js/config.js"></script><script src="../js/recenttrain.js"></script></body></html>

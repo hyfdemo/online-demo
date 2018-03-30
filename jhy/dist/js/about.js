@@ -1,0 +1,1 @@
+"use strict";require(["jquery","template"],function(t,e){var r="../src/img/",a=e("tpl-about",{about:{avater:r+"头像.jpg",qr:r+"qr.jpg",phone:r+"个人中心_关于_联系热线.png"}});t("section").html(a)});

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心首页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+   <header class="tbcolor">
+    <img src="../src/img/头像.jpg" alt="">
+    微信呢称
+   </header>
+    <section>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../src/img/首页_banner1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="../src/img/首页_banner2.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="categorycontainer">
+    <a href="study.html" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_在线学习.png" alt="">
+        <span>在线学习</span>
+    </a>
+    <a href="test.html" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_在线考试.png" alt="">
+        <span>在线考试</span>
+    </a>
+    <a href="train.html" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_我的培训.png" alt="">
+        <span>我的培训</span>
+    </a>
+    <a href="sign.html" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_签到考勤.png" alt="">
+        <span>签到考勤</span>
+    </a>
+    <a href="volunteer.html" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_志愿活动.png" alt="">
+        <span>志愿活动</span>
+    </a>
+    <a href="" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_捐赠.png" alt="">
+        <span>捐赠</span>
+    </a>
+    <a href="otherres.html" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_其他资源.png" alt="">
+        <span>其他资源</span>
+    </a>
+    <a href="mycert.html" class="category verticalimgspan">
+        <img src="../src/img/首页_选项_我的证书.png" alt="">
+        <span>我的证书</span>
+    </a>
+    </div>
+    <div class="recentlesson">
+        <div class="todetail" onclick='location.href="recenttrain.html"'>
+            <div>
+                <img src="../src/img/首页_消息.png" alt="">
+                最近开班信息            
+            </div>
+            <img src="../src/img/列表_选择.png" alt="">
+        </div>
+        <div class="lesson">
+            
+        </div>
+    </div>
+
+</section>
+<footer>
+    <a class="active verticalimgspan" href="index.html"><img src="../src/img/首页_选中_首页.png" alt=""><span>首页</span></a>
+    <a class='verticalimgspan' href="desk.html"><img src="../src/img/首页_未选中_工作台.png" alt=""><span>工作台</span></a>
+    <a class='verticalimgspan' href="member.html"><img src="../src/img/首页_未选中_个人中心.png" alt=""><em class="badge">2</em><span>个人中心</span></a>
+</footer>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script id='tpl-lesson' type='text/html'>
+        {{each lesson}}        
+        <p onclick='location.href="recenttrain.html"'>{{$value}}</p>
+        {{/each}}
+</script>
+<script src='../js/index.js'></script>
+
+</body>
+</html>

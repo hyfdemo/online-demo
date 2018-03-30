@@ -8,30 +8,30 @@ const autoprefixer = require('gulp-autoprefixer');
  const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('htmlmin', function() {
-  	gulp.src('pages/**/*.html')
+  	gulp.src('pages/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist/pages'));
 });
 gulp.task('jscompress', ()=> 
-        gulp.src('pages/**/*.js')
-        //.pipe(sourcemaps.init())
+        gulp.src(['js/*.js','!js/require.js'])
+        .pipe(sourcemaps.init())
         .pipe(babel({
             presets: ['env']
         }))
         .pipe(uglify())
-        //.pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist/pages'))
+        .pipe(sourcemaps.write({addComment: false}))
+        .pipe(gulp.dest('dist/js'))
 );
 gulp.task('csscompress', ()=> 
-        gulp.src('pages/**/*.css')
-        //.pipe(sourcemaps.init())
+        gulp.src('css/*.css')
+        .pipe(sourcemaps.init())
         .pipe(cleanCss())
-        //.pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist/pages'))
+        .pipe(sourcemaps.write({addComment: false}))
+        .pipe(gulp.dest('dist/css'))
 );
 gulp.task('auto',function(){
-	gulp.watch('src/js/config.js',['jscompress'])
-	gulp.watch('pages/**/*.css',['csscompress'])
+	gulp.watch('js/*.js',['jscompress'])
+	gulp.watch('css/*.css',['csscompress'])
 });
 gulp.task('img',()=>
 	 gulp.src('src/img/*')
@@ -39,11 +39,11 @@ gulp.task('img',()=>
         .pipe(gulp.dest('dist/src/img'))
 	);
 gulp.task('cssfix', () =>
-    gulp.src('pages/**/*.css')
+    gulp.src('css/*.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('dist/pages'))
+        .pipe(gulp.dest('dist/css'))
 );
-gulp.task('default', ['img', 'cssfix','htmlmin','csscompress','auto']);
+gulp.task('default', ['img', 'cssfix','htmlmin','csscompress','jscompress','auto']);

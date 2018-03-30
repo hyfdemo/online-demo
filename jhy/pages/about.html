@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心关于</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>关于</header>
+   <section>
+       
+   </section>
+   <script type="text/html" id='tpl-about'>
+          <div>
+                <img src={{about.avater}} alt="">
+                <p>救护员中心</p>
+                <span>v1.1.0</span>
+            </div>
+            <img src={{about.qr}} alt="">
+            <div>
+                <img src={{about.phone}} alt="">
+                <div>
+                    <p>救护员服务热线</p>
+                    <a href="tel:028-00000000">028-00000000</a>
+                </div>
+            </div>
+</script>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script src='../js/about.js'></script>
+</body>
+</html>
