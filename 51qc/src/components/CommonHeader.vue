@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-      <a href=""><img src="../assets/我的上传记录.png" alt=""></a>
+      <router-link to=''><img src="../assets/我的上传记录.png" alt=""></router-link>
   </div>
 </template>
 <script>
