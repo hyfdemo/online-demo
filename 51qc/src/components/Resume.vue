@@ -1,4 +1,6 @@
 <template>
+<div class="container">
+    <common-header></common-header>
     <div class="resume">
         <h3>简历上传</h3>
         <img src="../assets/上传简历.png" alt="">
@@ -9,14 +11,27 @@
             </p>
             <button>提交简历</button>
     </div>
+    <common-footer></common-footer>
+</div>
 </template>
 
 <script>
+import CommonFooter from '@/components/CommonFooter'
+import CommonHeader from '@/components/CommonHeader'
 export default {
-  
+  components:{
+          CommonFooter,
+          CommonHeader
+  }
 }
 </script>
 <style lang='css' scoped>
+.container{
+      display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+}
 .resume{
     flex: 1;
     display: flex;

@@ -18,14 +18,14 @@ export default {
     computed:{
         resumeactive(){
             if(this.$route.name=='resume'){
-            return this.$route.path==window.location.pathname
+            return true;
             }else{
                 return false;
             }
         },
         worksactive(){
             if(this.$route.name=='works'){
-            return this.$route.path==window.location.pathname
+            return true;
             }else{
                 return false;
             }
