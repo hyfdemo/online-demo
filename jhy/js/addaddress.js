@@ -35,9 +35,9 @@ require(['jquery','larea','template'],function($,larea,template){
         $('.setdefault').on('click',function(){
         $('#default').prop('checked',!($('#default').prop('checked')));
         if($('#default').prop('checked')){
-            $('.toselected').attr('src','../src/img/个人中心_邮寄信息_设为默认_选中.png')
+            $('.toselected').attr('src','../img/个人中心_邮寄信息_设为默认_选中.png')
         }else{
-            $('.toselected').attr('src','../src/img/个人中心_邮寄信息_设为默认_未选.png')
+            $('.toselected').attr('src','../img/个人中心_邮寄信息_设为默认_未选.png')
         }
     });
     })

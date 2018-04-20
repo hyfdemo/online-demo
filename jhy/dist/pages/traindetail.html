@@ -1,5 +1,23 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name="screen-orientation" content="portrait"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="full-screen" content="yes"><meta name="x5-fullscreen" content="true"><title>救护员中心培训详情</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/traindetail.css"></head><body><header class="tbcolor"><i id="back" onclick="goBack();"></i>培训详情</header><section></section><script id="tpl-train" type="text/html"><div class="traintitle">
-       <img src="../src/img/我的培训_未参加.png" alt="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心培训详情</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/traindetail.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>培训详情</header>
+<section></section>
+   <script id='tpl-train' type='text/html'>
+   <div class="traintitle">
+       <img src="../img/我的培训_未参加.png" alt="">
        <div>
            <h4>{{train.title}}</h4>
            <p>讲师：{{train.teacher}}</p>
@@ -12,4 +30,14 @@
         <p>培训内容</p>
         <span>{{train.desi}}</span>
         <button class="tcolor">签到考勤</button>
-    </div></script><script>var require={urlArgs:'v='+(new Date()).getTime()}</script><script src="../js/require.js"></script><script src="../js/config.js"></script><script src="../js/traindetail.js"></script></body></html>
+    </div>
+   </script> 
+
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script src='../js/traindetail.js'></script>
+</body>
+</html>

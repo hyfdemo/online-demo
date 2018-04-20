@@ -1,1 +1,78 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name="screen-orientation" content="portrait"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="full-screen" content="yes"><meta name="x5-fullscreen" content="true"><title>救护员中心我的证书</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/mycert.css"></head><body><header class="tbcolor"><i id="back" onclick="goBack();"></i>我的证书</header><div class="verticalimgspan"><img src="../src/img/首页_选项_救护员证_我的证书.png" alt=""> <span>我的救护员证</span></div><section><img class="front" src="../src/img/头像.jpg" alt=""> <img class="back" src="../src/img/头像.jpg" alt=""></section><script>var require={urlArgs:'v='+(new Date()).getTime()}</script><script src="../js/require.js"></script><script src="../js/config.js"></script><script src="../js/mycert.js"></script></body></html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心我的证书</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mycert.css">
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>我的证书</header>
+            <div class="verticalimgspan">
+                <img src="../img/首页_选项_救护员证_我的证书.png" alt="">
+                <span>我的救护员证</span>
+            </div>
+            <section>
+            </section>
+            <script id="tpl-cert" type="text/html">
+                <div class="certContainer">
+                    <img class="certTitle" src="../img/cert.png" alt="">
+                    <div>
+                        <img class="certAvater" src="data:image/png;base64,{{Photo}}" alt="" />
+                        <div class="certContent">
+                            <p>
+                                姓名 <span class="name">{{Name}}</span>
+                                性别 <span class="gender">{{Gender}}</span>
+                            </p>
+                            <p>
+                                身份证号 <span class="idNumber">{{IDNumber}}</span>
+                            </p>
+                            <p>
+                                编号 <span class="certId">{{CertifactionNumber}}</span>
+                            </p>
+                            <p>
+                                发证日期 <span class="issueDate">{{IssueDate}}</span>
+                                有效期 <span class="endDate">3年</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </script>
+            <script id="tpl-mail" type="text/html">
+                <div class="mailContainer">
+                    <div>
+                        <label>快递公司：</label>
+                        <input type="text" name="Exp_Company" value="{{Exp_Company}}" />
+                    </div>
+                    <div>
+                        <label>快递单号：</label>
+                        <input type="text" name="Exp_Code" value="{{Exp_Code}}" />
+                    </div>
+                    <div>
+                        <label>收件地址：</label>
+                        <input type="text" name="Rec_Address" value="{{Rec_Address}}" />
+                    </div>
+                    <div>
+                        <label>收件人：</label>
+                        <input type="text" name="Rec_Name" value="{{Rec_Name}}" />
+                    </div>
+                    <div>
+                        <label>收件人手机号：</label>
+                        <input type="text" name="Rec_Phone" value="{{Rec_Phone}}" />
+                    </div>
+                </div>
+            </script>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script src='../js/mycert.js'></script>
+</body>
+</html>

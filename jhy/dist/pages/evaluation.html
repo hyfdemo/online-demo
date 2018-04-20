@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心教学评估</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/evaluation.css">
+</head>
+<body>
+
+    <header class="tbcolor"><i id='back' onclick='goBack();'></i>教学评估</header>
+    <div class='container'>
+            
+        <form action="">
+            <div>
+                <label for="GXAP">1.各项安排满意度</label>
+                <div class="GXAPContainer">
+                    <label for="GXAP1">满意</label>
+                    <input id="GXAP1" type="radio" name="GXAP" value="满意" required>
+                    <label for="GXAP2">比较满意</label>
+                    <input id="GXAP2" type="radio" name="GXAP" value="比较满意" required>
+                    <label for="GXAP3">不满意</label>
+                    <input id="GXAP3" type="radio" name="GXAP" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="JXAP">2.教学安排满意度</label>
+                <div class="JXAPContainer">
+                    <label for="JXAP1">满意</label>
+                    <input id="JXAP1" type="radio" name="JXAP" value="满意" required>
+                    <label for="JXAP2">比较满意</label>
+                    <input id="JXAP2" type="radio" name="JXAP" value="比较满意" required>
+                    <label for="JXAP3">不满意</label>
+                    <input id="JXAP3" type="radio" name="JXAP" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="KJMYD">3.课件满意度</label>
+                <div class="KJMYDContainer">
+                    <label for="KJMYD1">满意</label>
+                    <input id="KJMYD1" type="radio" name="KJMYD" value="满意" required>
+                    <label for="KJMYD2">比较满意</label>
+                    <input id="KJMYD2" type="radio" name="KJMYD" value="比较满意" required>
+                    <label for="KJMYD3">不满意</label>
+                    <input id="KJMYD3" type="radio" name="KJMYD" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="HXZYD_Ready">4.红十字运动知识_准备程度</label>
+                <div class="HXZYD_ReadyContainer">
+                    <label for="HXZYD_Ready1">满意</label>
+                    <input id="HXZYD_Ready1" type="radio" name="HXZYD_Ready" value="满意" required>
+                    <label for="HXZYD_Ready2">比较满意</label>
+                    <input id="HXZYD_Ready2" type="radio" name="HXZYD_Ready" value="比较满意" required>
+                    <label for="HXZYD_Ready3">不满意</label>
+                    <input id="HXZYD_Ready3" type="radio" name="HXZYD_Ready" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="HXZYD_Content">5.红十字运动知识_内容准确性</label>
+                <div class="HXZYD_ContentContainer">
+                    <label for="HXZYD_Content1">满意</label>
+                    <input id="HXZYD_Content1" type="radio" name="HXZYD_Content" value="满意" required>
+                    <label for="HXZYD_Content2">比较满意</label>
+                    <input id="HXZYD_Content2" type="radio" name="HXZYD_Content" value="比较满意" required>
+                    <label for="HXZYD_Content3">不满意</label>
+                    <input id="HXZYD_Content3" type="radio" name="HXZYD_Content" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="HXZYD_Focus">6.红十字运动知识_讲课清晰度</label>
+                <div class="HXZYD_FocusContainer">
+                    <label for="HXZYD_Focus1">满意</label>
+                    <input id="HXZYD_Focus1" type="radio" name="HXZYD_Focus" value="满意" required>
+                    <label for="HXZYD_Focus2">比较满意</label>
+                    <input id="HXZYD_Focus2" type="radio" name="HXZYD_Focus" value="比较满意" required>
+                    <label for="HXZYD_Focus3">不满意</label>
+                    <input id="HXZYD_Focus3" type="radio" name="HXZYD_Focus" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="JHGL_Ready">7.救护概论_准备程度</label>
+                <div class="JHGL_ReadyContainer">
+                    <label for="JHGL_Ready1">满意</label>
+                    <input id="JHGL_Ready1" type="radio" name="JHGL_Ready" value="满意" required>
+                    <label for="JHGL_Ready2">比较满意</label>
+                    <input id="JHGL_Ready2" type="radio" name="JHGL_Ready" value="比较满意" required>
+                    <label for="JHGL_Ready3">不满意</label>
+                    <input id="JHGL_Ready3" type="radio" name="JHGL_Ready" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="JHGL_Content">8.救护概论_内容准确性</label>
+                <div class="JHGL_ContentContainer">
+                    <label for="JHGL_Content1">满意</label>
+                    <input id="JHGL_Content1" type="radio" name="JHGL_Content" value="满意" required>
+                    <label for="JHGL_Content2">比较满意</label>
+                    <input id="JHGL_Content2" type="radio" name="JHGL_Content" value="比较满意" required>
+                    <label for="JHGL_Content3">不满意</label>
+                    <input id="JHGL_Content3" type="radio" name="JHGL_Content" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="JHGL_Focus">9.救护概论_讲课清晰度</label>
+                <div class="JHGL_FocusContainer">
+                    <label for="JHGL_Focus1">满意</label>
+                    <input id="JHGL_Focus1" type="radio" name="JHGL_Focus" value="满意" required>
+                    <label for="JHGL_Focus2">比较满意</label>
+                    <input id="JHGL_Focus2" type="radio" name="JHGL_Focus" value="比较满意" required>
+                    <label for="JHGL_Focus3">不满意</label>
+                    <input id="JHGL_Focus3" type="radio" name="JHGL_Focus" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="XFFS_Ready">10.心肺复苏_准备程度</label>
+                <div class="XFFS_ReadyContainer">
+                    <label for="XFFS_Ready1">满意</label>
+                    <input id="XFFS_Ready1" type="radio" name="XFFS_Ready" value="满意" required>
+                    <label for="XFFS_Ready2">比较满意</label>
+                    <input id="XFFS_Ready2" type="radio" name="XFFS_Ready" value="比较满意" required>
+                    <label for="XFFS_Ready3">不满意</label>
+                    <input id="XFFS_Ready3" type="radio" name="XFFS_Ready" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="XFFS_Content">11.心肺复苏_内容准确性</label>
+                <div class="XFFS_ContentContainer">
+                    <label for="XFFS_Content1">满意</label>
+                    <input id="XFFS_Content1" type="radio" name="XFFS_Content" value="满意" required>
+                    <label for="XFFS_Content2">比较满意</label>
+                    <input id="XFFS_Content2" type="radio" name="XFFS_Content" value="比较满意" required>
+                    <label for="XFFS_Content3">不满意</label>
+                    <input id="XFFS_Content3" type="radio" name="XFFS_Content" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="XFFS_Focus">12.心肺复苏_讲课清晰度</label>
+                <div class="XFFS_FocusContainer">
+                    <label for="XFFS_Focus1">满意</label>
+                    <input id="XFFS_Focus1" type="radio" name="XFFS_Focus" value="满意" required>
+                    <label for="XFFS_Focus2">比较满意</label>
+                    <input id="XFFS_Focus2" type="radio" name="XFFS_Focus" value="比较满意" required>
+                    <label for="XFFS_Focus3">不满意</label>
+                    <input id="XFFS_Focus3" type="radio" name="XFFS_Focus" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="int CSJH_Ready">13.创伤救护_准备程度</label>
+                <div class="int CSJH_ReadyContainer">
+                    <label for="int CSJH_Ready1">满意</label>
+                    <input id="int CSJH_Ready1" type="radio" name="int CSJH_Ready" value="满意" required>
+                    <label for="int CSJH_Ready2">比较满意</label>
+                    <input id="int CSJH_Ready2" type="radio" name="int CSJH_Ready" value="比较满意" required>
+                    <label for="int CSJH_Ready3">不满意</label>
+                    <input id="int CSJH_Ready3" type="radio" name="int CSJH_Ready" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="CSJH_Content">14.创伤救护_内容准确性</label>
+                <div class="CSJH_ContentContainer">
+                    <label for="CSJH_Content1">满意</label>
+                    <input id="CSJH_Content1" type="radio" name="CSJH_Content" value="满意" required>
+                    <label for="CSJH_Content2">比较满意</label>
+                    <input id="CSJH_Content2" type="radio" name="CSJH_Content" value="比较满意" required>
+                    <label for="CSJH_Content3">不满意</label>
+                    <input id="CSJH_Content3" type="radio" name="CSJH_Content" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="CSJH_Focus">15.创伤救护_讲课清晰度</label>
+                <div class="CSJH_FocusContainer">
+                    <label for="CSJH_Focus1">满意</label>
+                    <input id="CSJH_Focus1" type="radio" name="CSJH_Focus" value="满意" required>
+                    <label for="CSJH_Focus2">比较满意</label>
+                    <input id="CSJH_Focus2" type="radio" name="CSJH_Focus" value="比较满意" required>
+                    <label for="CSJH_Focus3">不满意</label>
+                    <input id="CSJH_Focus3" type="radio" name="CSJH_Focus" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="XXKC_Ready">16.选修课程_准备程度</label>
+                <div class="XXKC_ReadyContainer">
+                    <label for="XXKC_Ready1">满意</label>
+                    <input id="XXKC_Ready1" type="radio" name="XXKC_Ready" value="满意" required>
+                    <label for="XXKC_Ready2">比较满意</label>
+                    <input id="XXKC_Ready2" type="radio" name="XXKC_Ready" value="比较满意" required>
+                    <label for="XXKC_Ready3">不满意</label>
+                    <input id="XXKC_Ready3" type="radio" name="XXKC_Ready" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="XXKC_Content">17.选修课程_内容准确性</label>
+                <div class="XXKC_ContentContainer">
+                    <label for="XXKC_Content1">满意</label>
+                    <input id="XXKC_Content1" type="radio" name="XXKC_Content" value="满意" required>
+                    <label for="XXKC_Content2">比较满意</label>
+                    <input id="XXKC_Content2" type="radio" name="XXKC_Content" value="比较满意" required>
+                    <label for="XXKC_Content3">不满意</label>
+                    <input id="XXKC_Content3" type="radio" name="XXKC_Content" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="XXKC_Focus">18.选修课程_讲课清晰度</label>
+                <div class="XXKC_FocusContainer">
+                    <label for="XXKC_Focus1">满意</label>
+                    <input id="XXKC_Focus1" type="radio" name="XXKC_Focus" value="满意" required>
+                    <label for="XXKC_Focus2">比较满意</label>
+                    <input id="XXKC_Focus2" type="radio" name="XXKC_Focus" value="比较满意" required>
+                    <label for="XXKC_Focus3">不满意</label>
+                    <input id="XXKC_Focus3" type="radio" name="XXKC_Focus" value="不满意" required>
+                </div>
+            </div>
+            <div>
+                <label for="Suggest">19.建议与意见</label>
+                <div class="SuggestContainer">
+                    <textarea name="Suggest" id="Suggest"></textarea>
+                </div>
+            </div>
+        </form>
+        <button class="tbcolor bottombutton">提交</button>
+
+    </div>
+
+    <script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+    </script>
+    <script src="../js/require.js"></script>
+    <script src='../js/config.js'></script>
+    <script src='../js/evaluation.js'></script>
+</body>
+</html>

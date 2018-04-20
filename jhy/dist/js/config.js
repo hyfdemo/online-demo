@@ -1,1 +1,32 @@
-"use strict";function goBack(){history.back()}function goHome(){location.href="index.html"}function GetQueryString(e){var r=new RegExp("(^|&)"+e+"=([^&]*)(&|$)","i"),i=window.location.search.substr(1).match(r);return null!=i?i[2]:null}require.config({baseUrl:"../js",paths:{jquery:"jquery-3.3.1.min",swiper:"swiper-4.1.6.min",larea:"LArea.min",wx:"http://res.wx.qq.com/open/js/jweixin-1.2.0.js",template:"template-web"},shim:{swiper:{deps:["jquery"],exports:"swiper"}}});
+"use strict"; function goBack() { history.back() } function goHome() { location.href = "index.html" } function GetQueryString(e) { var r = new RegExp("(^|&)" + e + "=([^&]*)(&|$)", "i"), i = window.location.search.substr(1).match(r); return null != i ? i[2] : null } require.config({ baseUrl: "../js", paths: { jquery: "jquery-3.3.1.min", jqueryForm: "jquery.form", swiper: "swiper-4.1.6.min", larea: "LArea.min", wx: "http://res.wx.qq.com/open/js/jweixin-1.2.0.js", template: "template-web" ,layer:"layer"}, shim: { swiper: { deps: ["jquery"], exports: "swiper" } } }); var ApprenticeId = sessionStorage.getItem('ApprenticeId'); var Name = sessionStorage.getItem('Name'); var Phone = sessionStorage.getItem('Phone'); var Gender = sessionStorage.getItem('Gender'); var IDNumber = sessionStorage.getItem('IDNumber'); var Age = sessionStorage.getItem('Age')
+var BirthDate = sessionStorage.getItem('BirthDate')
+var CertCode = sessionStorage.getItem('CertCode')
+var CertOrgId = sessionStorage.getItem('CertOrgId')
+var CertOrgName = sessionStorage.getItem('CertOrgName')
+var CertStatus = sessionStorage.getItem('CertStatus')
+var CommunicationAddress = sessionStorage.getItem('CommunicationAddress')
+var CompanyName = sessionStorage.getItem('CompanyName')
+var Education = sessionStorage.getItem('Education')
+var Evaluation = sessionStorage.getItem('Evaluation')
+var IssueDate = sessionStorage.getItem('IssueDate')
+var Nation = sessionStorage.getItem('Nation')
+var Occupation = sessionStorage.getItem('Occupation')
+var OrgName = sessionStorage.getItem('OrgName')
+var Photo = sessionStorage.getItem('Photo')
+var Remark = sessionStorage.getItem('Remark')
+var Status = sessionStorage.getItem('Status')
+var TrainingBeginDate = sessionStorage.getItem('TrainingBeginDate')
+var TrainingEndDate = sessionStorage.getItem('TrainingEndDate')
+var Volunteer = sessionStorage.getItem('Volunteer')
+var Mail_Address = sessionStorage.getItem('Mail_Address')
+var Mail_Addressee = sessionStorage.getItem('Mail_Addressee')
+var Mail_Phone = sessionStorage.getItem('Mail_Phone') 
+var AchieveType = sessionStorage.getItem('AchieveType')
+var IDCardFront = sessionStorage.getItem('IDCardFront')
+var IDCardBack = sessionStorage.getItem('IDCardBack')
+var ClassId = sessionStorage.getItem('ClassId')
+
+var IDReg = /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[012])(0[1-9]|[12]\d|3[01])\d{3}(\d|[xX])$/;
+var phoneReg = /^1[3|4|5|6|7|8|9][0-9]{9}$/;
+var pwdReg = /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).*$/;
+function dateReg(date) {return date.split('T')[0]}

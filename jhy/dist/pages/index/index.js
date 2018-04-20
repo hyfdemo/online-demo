@@ -1,1 +1,0 @@
-"use strict";require(["swiper","template"],function(e,n){new e(".swiper-container",{autoplay:!0,loop:!0,pagination:{el:".swiper-pagination"}});var i=n("tpl-lesson",{lesson:["【初级急救员急救知识培训】开班时间：2018年2月28日 09:00地点：成都市成华区建设路173号二楼3号教室开班人数：30人","【行车安全急救培训】开班时间：2018年2月10日 09:00地点：成都市成华区建设路173号三楼1号教室开班人数：30人"]});$(".lesson").append(i)});

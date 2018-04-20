@@ -1,1 +1,122 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name="screen-orientation" content="portrait"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="full-screen" content="yes"><meta name="x5-fullscreen" content="true"><title>救护员中心在线考试</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/testdeatail.css"></head><body><header class="tbcolor"><i id="back" onclick="goBack();"></i>在线考试</header><section></section><button class="tbcolor bottombutton">提交试卷</button><script>var require={urlArgs:'v='+(new Date()).getTime()}</script><script src="../js/require.js"></script><script src="../js/config.js"></script><script src="../js/testdetail.js"></script></body></html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心在线考试</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layer.css">
+    <link rel="stylesheet" href="../css/testdeatail.css">
+</head>
+<body>
+    <header class="tbcolor"><i id='back'></i>在线考试</header>
+    <section>
+        <div class="testStatus">
+            <a class="verticalimgspan countTime" href="#"><img src="../img/在线考试_时钟.png" alt=""><span class="timeCount"></span></a>
+            <a class="verticalimgspan submitTest" href="#"><img src="../img/在线考试_交卷.png" alt=""><span>交卷</span></a>
+        </div>
+    </section>
+
+    <div class="tbcolor testTool">
+        <a href="javascript:;" class="prev">上一题</a>
+        <a class="verticalimgspan countTest" href="javascript:;"><img src="../img/在线考试_题库.png" alt=""><span><strong>0</strong>/<small></small></span></a>
+        <a href="javascript:;" class="next">下一题</a>
+    </div>
+
+    <div class="countTestContainer hide">
+        <div>
+            <div class="countHeader">
+                <p>共<small></small>题，已答<strong class="tcolor">0</strong>题</p>
+                <img class="close" src="../img/在线考试_关闭.png" alt="">
+            </div>
+            <ul class="countContent"></ul>
+            <div class="countFooter">
+                <p class="tcolor">
+                    <span class="tbcolor"></span>:
+                    已作答
+                </p>
+                <p class="black">
+                    <span></span>:
+                    未作答
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="exitModal hide">
+        <div class="container">
+            <h4 class="tbcolor">提示</h4>
+            <div class="tipContent">
+                <p>每人仅有2次考试机会，退出后您将失去1次考试机会！</p>
+                <div class="buttonContainer">
+                    <button onclick='location.href="test.html"'>退出</button>
+                    <button class="tbcolor closeExitModal">继续做题</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="submitModal hide">
+        <div class="container">
+            <h4 class="tbcolor">提示</h4>
+            <div class="tipContent">
+                <p>您还有<span class="todo"></span>题未做，确认交卷吗？</p>
+                <div class="buttonContainer">
+                    <button class="tbcolor submit">交卷</button>
+                    <button class="closeModal">继续做题</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testResultModal hide">
+        <div class="container">
+            <h4 class="tbcolor">考试结果</h4>
+            <div class="tipContent">
+                <h4>分数 <strong class="tcolor score"></strong></h4>
+                <ul>
+                    <li>正确 <span class="tcolor corrent"></span> 题</li>
+                    <li>错误 <span class="tcolor error"></span> 题</li>
+                </ul>
+                <div class="buttonContainer">
+                    <button class="closeResultModal" onclick="location.href ='testwatch.html'">查看试卷</button>
+                    <button class="tbcolor" onclick="location.href='test.html'">返回首页</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script id="tpl-count" type="text/html">
+        {{each datas}}
+        <li data-id="{{$index}}">{{$index+1}}</li>
+        {{/each}}
+    </script>
+    <script id="tpl-test" type="text/html">
+        {{each datas}}
+        <div data-id={{$index}} class="{{$index==0 ? 'show' : 'hide'}} testContainer">
+            <h4>【{{$value.Type==0 ? '选择题' : '判断题'}}】</h4>
+            <h4>{{$index+1}}.{{$value.Content}}</h4>
+            <ul data-id={{$value.id}}>
+                {{each $value.Options as itemValue}}
+                <li>
+                    <span class="testValue">{{itemValue.Value}}</span>
+                    <span>{{itemValue.Text}}</span>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/each}}
+    </script>
+    <script>
+        var require = { urlArgs: 'v=' + (new Date()).getTime() }
+    </script>
+    <script src="../js/require.js"></script>
+    <script src='../js/config.js'></script>
+    <script src='../js/testdetail.js'></script>
+</body>
+</html>

@@ -1,4 +1,42 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name="screen-orientation" content="portrait"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="full-screen" content="yes"><meta name="x5-fullscreen" content="true"><title>救护员中心在线学习</title><link rel="stylesheet" href="../css/common.css"><link rel="stylesheet" href="../css/swiper-4.1.6.min.css"><link rel="stylesheet" href="../css/study.css"></head><body><header class="tbcolor"><i id="back" onclick="goBack();"></i>在线学习</header><div class="swiper-container"><div class="swiper-pagination"></div><div class="swiper-wrapper"><div id="chooselesson" class="swiper-slide"></div><div id="finishlesson" class="swiper-slide"></div><div id="tofinishlesson" class="swiper-slide"></div></div></div><script src="../js/jquery-3.3.1.min.js"></script><script src="../js/swiper-4.1.6.min.js"></script><script>var mySwiper = new Swiper('.swiper-container',{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心在线学习</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="../css/study.css">
+    
+
+</head>
+<body>
+   <header class="tbcolor"><i id='back' onclick='goBack();'></i>在线学习</header>
+   <div class="swiper-container">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+            <div id='chooselesson' class="swiper-slide">
+                
+
+            </div>
+            <div id='finishlesson' class="swiper-slide">
+                
+            </div>
+            <div id="tofinishlesson" class="swiper-slide">
+                
+            </div>
+        </div>
+    </div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/swiper-4.1.6.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
     pagination: {
     el: '.swiper-pagination',
     clickable :true,
@@ -21,31 +59,50 @@
     $(mySwiper.pagination.$el[0]).on('click','li',function(){
             $(this).addClass('active').siblings('.active').removeClass('active');
             mySwiper.slideTo($(this).index(), 300, false);
-        })</script><script id="tpl-chooselesson" type="text/html">{{each chooselesson}}
+        })
+</script>
+<script id='tpl-chooselesson' type='text/html'>
+    {{each chooselesson}}
     <div class="lessoncontent" onclick='location.href="studylesson.html"'>
-                    <img src="../src/img/在线学习.png" alt="">
+                    <img src="../img/在线学习.png" alt="">
                     <div>
                         <p>{{$value.title}}</p>
                         <span>{{$value.disc}}</span>
                     </div>
                 </div>
                 
-                {{/each}}</script><script id="tpl-finishlesson" type="text/html"><p>已完成总学时：<span class="tcolor">{{finishlesson.num}}</span>学时</p>
+                {{/each}}
+                </script>
+<script id='tpl-finishlesson' type='text/html'>
+
+                <p>已完成总学时：<span class="tcolor">{{finishlesson.num}}</span>学时</p>
                 {{each finishlesson.finishlessons}}
                 <div class="lessoncontent">
-                    <img src="../src/img/在线学习.png" alt="">
+                    <img src="../img/在线学习.png" alt="">
                     <div>
                         <p>{{$value.title}}</p>
                         <span>{{$value.disc}}</span>
                     </div>
                 </div>
-                {{/each}}</script><script id="tpl-tofinishlesson" type="text/html">{{each tofinishlesson}}
+                {{/each}}
+                </script>
+                <script id='tpl-tofinishlesson' type='text/html'>
+    {{each tofinishlesson}}
     <div class="lessoncontent">
-                    <img src="../src/img/在线学习.png" alt="">
+                    <img src="../img/在线学习.png" alt="">
                     <div>
                         <p>{{$value.title}}</p>
                         <span>{{$value.disc}}</span>
                     </div>
                 </div>
                 
-                {{/each}}</script><script>var require={urlArgs:'v='+(new Date()).getTime()}</script><script src="../js/require.js"></script><script src="../js/config.js"></script><script src="../js/study.js"></script></body></html>
+                {{/each}}
+                </script>
+<script>
+    var require={urlArgs:'v='+(new Date()).getTime()}
+</script>
+<script src="../js/require.js"></script>
+<script src='../js/config.js'></script>
+<script src='../js/study.js'></script>
+</body>
+</html>

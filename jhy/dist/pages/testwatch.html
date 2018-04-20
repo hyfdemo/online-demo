@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>救护员中心查看试卷</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="../css/layer.css">
+    <link rel="stylesheet" href="../css/testwatch.css">
+</head>
+<body>
+    <header class="tbcolor"><i id='back' onclick='location.href="test.html"'></i>查看试卷 <em class="home" onclick="location.href='index.html'"></em> </header>
+    <div class="swiper-container">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+            <div id='test1' class="swiper-slide">
+
+            </div>
+            <div id='test2' class="swiper-slide">
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/swiper-4.1.6.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                slideToClickedSlide: true,
+                type: 'custom',
+                renderCustom: function (swiper, current, total) {
+                    switch (current) {
+                        case 1:
+                            return '<li class="active tcolor">第1次考试</li><li>第2次考试</li>';
+                        case 2:
+                            return '<li>第1次考试</li><li class="active tcolor">第2次考试</li>';
+                        default:
+                            return '<li class="active tcolor">第1次考试</li><li>第2次考试</li>';
+                    }
+                },
+            }
+        });
+        $(mySwiper.pagination.$el[0]).on('click', 'li', function () {
+            $(this).addClass('active').siblings('.active').removeClass('active');
+            mySwiper.slideTo($(this).index(), 300, false);
+        })
+    </script>
+    <script id='tpl-test' type='text/html'>
+        <p>共<span class="total"></span>题，错<span class="tcolor error"></span>题</p>
+        {{each List}}
+        <div class="testContainer">
+            {{if $value.QType==0 && $value.List.length>0}}
+            <h4>【{{$value.QTypeStr}}】</h4>
+            {{each $value.List as v i}}
+            <div class="testContent">
+                <h4>{{i+1}}.{{v.Content}}</h4>
+                <div>
+                    <p>你的答案：{{v.Answer}}</p>
+                    <p>正确答案：{{v.QAnswer}}</p>
+                </div>
+            </div>
+            {{/each}}
+            {{else if $value.QType==1 && $value.List.length>0}}
+            <h4>【{{$value.QTypeStr}}】</h4>
+            {{each $value.List as v i}}
+            <div class="testContent">
+                <h4>{{i+1}}.{{v.Content}}</h4>
+                <div>
+                    <p>你的答案：{{v.Answer}}</p>
+                    <p>正确答案：{{v.QAnswer}}</p>
+                </div>
+            </div>
+            {{/each}}
+            {{/if}}
+        </div>
+        {{/each}}
+    </script>
+    <script>
+        var require = { urlArgs: 'v=' + (new Date()).getTime() }
+    </script>
+    <script src="../js/require.js"></script>
+    <script src='../js/config.js'></script>
+    <script src='../js/testwatch.js'></script>
+</body>
+</html>
