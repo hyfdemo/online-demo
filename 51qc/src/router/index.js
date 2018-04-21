@@ -27,7 +27,11 @@ export default new Router({
       component: Uploaded
     },
     {
-      path: '/admin',
+      path: '/admin.html',
+      redirect:{name: 'resumed'}
+    },
+    {
+      path: '/resumed',
       name: 'resumed',
       component: ResumeD
     },
