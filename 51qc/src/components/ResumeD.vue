@@ -17,7 +17,7 @@
               <a href="">上传时间</a>
               <a href="">操作</a>
           </li>
-          <li v-for="(item,index) in list" :key="index">
+          <li v-for="(item,index) in list" :key="index" v-show="(pageCurrent-1)*pageSize<index+1 &&  index+1<=pageSize*pageCurrent">
               <a href="javascript:;">
                     <input type="checkbox" v-model="checked" :value='index'>
               </a>
@@ -34,6 +34,27 @@
       </ul>
     <footer>
         <ul class="pages">
+            <li v-show="pageCurrent>1" @click='loadPage(pageCurrent-1)'>上一页</li>
+            <template v-if="pageCount>10">
+                <li :class="1==pageCurrent ? 'active' : ''" @click="loadPage(1)">1</li>
+                <li :class="2==pageCurrent ? 'active' : ''" @click="loadPage(2)">2</li>
+                <li :class="pageCurrent!=1 && pageCurrent!=2 && pageCurrent!=pageCount-1 && pageCurrent!=pageCount ? 'active' : ''">······</li>
+                <li :class="pageCount-1==pageCurrent ? 'active' : ''" @click="loadPage(pageCount-1)">{{pageCount-1}}</li>
+                <li :class="pageCount==pageCurrent ? 'active' : ''" @click="loadPage(pageCount)">{{pageCount}}</li>
+            </template>
+            <template v-else >
+                <li v-for="item in pageCount" :key="item" :class="item==pageCurrent ? 'active' : ''" @click="loadPage(item)">
+                {{item}}
+                </li>  
+            </template>
+            <li v-show="pageCurrent<pageCount" @click='loadPage(pageCurrent+1)'>下一页</li>
+
+                <li>
+                    跳转到第
+                    <input type="text" class="topage" v-model="pageNum">
+                    页
+                    <input type="button" value='确定' @click='loadPage(pageNum)'>
+                    </li>
         </ul>
     </footer>
   </div>
@@ -44,8 +65,7 @@ export default {
   data(){
       return {
           checked:[],
-          pageTotal:5,
-          showItem:10,
+          pageSize:10,
           pageCurrent:1
       }
   },
@@ -63,11 +83,14 @@ export default {
             this.checked=[]
         }
       }
-      }
+    },
+    pageCount:function(){
+        return Math.ceil(this.list.length/this.pageSize)
+    }
   },
   methods:{
-      loadPage(){
-          this.list.length/10
+      loadPage(opt){
+          return this.pageCurrent=opt;
       },
       downlot(){
 
@@ -82,7 +105,6 @@ ul.content{
 }
 ul.content li{
     display: flex;
-    list-style: none;
     height: 5.25rem;
     line-height: 5.25rem;
     font-size: 0.75rem;
@@ -136,5 +158,27 @@ ul.content li.headTitle>a{
     background: rgba(57, 130, 51, 1);
     border-radius: 0.25rem;
 
+}
+ul.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.pages li{
+    cursor: pointer;
+    padding: 0.5rem;
+}
+ul.pages li.active{
+    color: rgba(22, 150, 242, 1);
+}
+input{
+outline: none;
+    border: 1px solid rgba(187, 187, 187, 1);
+}
+.topage{
+    width: 2rem;
+    color: rgba(136, 136, 136, 1);
+    text-align: center;
+    font-size: 0.88rem;
 }
 </style>

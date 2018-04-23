@@ -96,7 +96,7 @@ export default {
 </script>
 <style>
 html{
-  font-size:16px;
+  font-size:14px;
   width: 100%;
   height: 100%;
 }
@@ -107,6 +107,9 @@ body{
 body,h3,p,ul,li{
     margin:0;
   padding:0;
+}
+li{
+    list-style: none;
 }
 a{
   text-decoration: none;
