@@ -4,92 +4,15 @@
       <router-link :to='{name:"resumed"}' exact>简历下载</router-link>
       <router-link :to='{name:"worksd"}'>用户作品下载</router-link>      
       </header>
-      <router-view :list='list'></router-view>
+      <router-view></router-view>
   </div>
 </template>
 <script>
-var list=[
-    {
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },
-    {
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },
-    {
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    },{
-              wx:'微信号',
-              name:'张三求职简历-会计专业',
-              ext:'.png',
-              time:'2018-05-03 18:26',
-              href:'xxxxxxx'
-    }
-]
+
 export default {
     name:'Admin',
     data(){
         return {
-            list:list
         }
     }
 }
@@ -114,8 +37,11 @@ li{
 a{
   text-decoration: none;
 }
+#admin{
+    padding-bottom: 2rem;
+}
   #admin>header{
-        height: 8.75rem;
+        height: 6.75rem;
         background: rgba(22, 150, 242, 1);
         padding: 0 8.13rem;
         display: flex;

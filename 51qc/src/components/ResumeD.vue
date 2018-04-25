@@ -5,7 +5,7 @@
     <input id='checkAll' type="checkbox" v-model="allChecked">
     <label for="checkAll">全选</label>
     </a>
-      <a href="javascript:;" @click='downlot'>批量下载</a>       
+      <a href="javascript:;" @click='download'>批量下载</a>       
       </header>
     <ul class="content">
           <li class="headTitle">
@@ -61,13 +61,17 @@
 </template>
 <script>
 export default {
-  props:['list'],
   data(){
       return {
+          list:[],
           checked:[],
           pageSize:10,
-          pageCurrent:1
+          pageCurrent:1,
+          pageNum:''
       }
+  },
+  mounted:function(){
+      this.loadData()
   },
   computed:{
       allChecked:{
@@ -89,10 +93,20 @@ export default {
     }
   },
   methods:{
+      loadData(){
+          var _this=this;
+          _this.axios.get('./static/data.json')
+               .then(function(data){
+                _this.list=data.data;
+               })
+               .catch(function(error){
+                   console.log(error)
+               })
+      },
       loadPage(opt){
           return this.pageCurrent=opt;
       },
-      downlot(){
+      download(){
 
       }
   }
